@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MallApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_item_main">Главная</string>
+    <string name="drawer_item_like">Избранные</string>
+    <string name="drawer_item_view">Просмотренные ранее</string>
+    <string name="drawer_item_about">О приложении</string>
+    <string name="drawer_item_feedback">Обратная связь</string>
+</resources>

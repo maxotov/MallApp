@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#FFF5F5F5</color>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="colorPrimary" type="color">#673AB7</item>
+    <item name="colorPrimaryDark" type="color">#512DA8</item>
+    <item name="colorAccent" type="color">#FF4081</item>
+    <color name="theme_primary">#2196F3</color>
+    <color name="theme_primary_dark">#1976D2</color>
+    <color name="ripple">#78C9FF</color>
+    <item name="blue" type="color">#FF33B5E5</item>
+    <item name="purple" type="color">#FFAA66CC</item>
+    <item name="green" type="color">#FF99CC00</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="red" type="color">#FFFF4444</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+    <item name="seawave" type="color">#01BF9B</item>
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="indigo" type="color">#304FFE</item>
+    <item name="black" type="color">#000000</item>
+
+    <color name="grey_700">#616161</color>
+    <color name="cyan_900">#006064</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_border">#ffafed44</color>
+    <color name="Selected">#FD3E43</color>
+
+    <color name="view_background">#e8ecfa</color>
+    <color name="btn_bg">#277bec</color>
+    <color name="txt_font">#4e5572</color>
+    <color name="action_bar">#1f2649</color>
+</resources>
