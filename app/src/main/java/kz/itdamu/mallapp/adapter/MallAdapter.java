@@ -14,6 +14,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import kz.itdamu.mallapp.R;
+import kz.itdamu.mallapp.activity.ShopActivity;
 import kz.itdamu.mallapp.entity.Mall;
 
 /**
@@ -75,7 +76,7 @@ public class MallAdapter extends RecyclerView.Adapter {
             View v = LayoutInflater.from(parent.getContext()).inflate(
                     R.layout.mall_item, parent, false);
 
-            vh = new FirmViewHolder(v);
+            vh = new MallViewHolder(v);
         } else {
             View v = LayoutInflater.from(parent.getContext()).inflate(
                     R.layout.progress_item, parent, false);
@@ -87,12 +88,12 @@ public class MallAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        if (holder instanceof FirmViewHolder) {
+        if (holder instanceof MallViewHolder) {
 
             Mall mall = (Mall) mallList.get(position);
 
-            ((FirmViewHolder) holder).name.setText(mall.getName());
-            ((FirmViewHolder) holder).mallId.setText(String.valueOf(mall.getId()));
+            ((MallViewHolder) holder).name.setText(mall.getName());
+            ((MallViewHolder) holder).mallId.setText(String.valueOf(mall.getId()));
         } else {
             ((ProgressViewHolder) holder).progressBar.setIndeterminate(true);
         }
@@ -111,11 +112,11 @@ public class MallAdapter extends RecyclerView.Adapter {
         this.onLoadMoreListener = onLoadMoreListener;
     }
 
-    public class FirmViewHolder extends RecyclerView.ViewHolder {
+    public class MallViewHolder extends RecyclerView.ViewHolder {
         public TextView name;
         public TextView mallId;
 
-        public FirmViewHolder(View v) {
+        public MallViewHolder(View v) {
             super(v);
             name = (TextView) v.findViewById(R.id.mall_name);
             mallId = (TextView) v.findViewById(R.id.mall_id);
@@ -124,10 +125,10 @@ public class MallAdapter extends RecyclerView.Adapter {
                 @Override
                 public void onClick(View v) {
                     Log.d("Mall id = ", mallId.getText().toString());
-                    /**Intent intent = new Intent(activity, MainActivity.class);
+                     Intent intent = new Intent(activity, ShopActivity.class);
                      intent.putExtra("id", mallId.getText().toString());
                      intent.putExtra("title", name.getText().toString());
-                     activity.startActivity(intent);*/
+                     activity.startActivity(intent);
                 }
             });
         }
