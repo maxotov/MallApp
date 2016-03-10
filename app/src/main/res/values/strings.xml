@@ -7,4 +7,5 @@
     <string name="drawer_item_view">Просмотренные ранее</string>
     <string name="drawer_item_about">О приложении</string>
     <string name="drawer_item_feedback">Обратная связь</string>
+    <string name="title_activity_shop">ShopActivity</string>
 </resources>
