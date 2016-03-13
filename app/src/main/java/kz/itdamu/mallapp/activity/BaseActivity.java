@@ -23,6 +23,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import kz.itdamu.mallapp.R;
+import kz.itdamu.mallapp.entity.User;
+import kz.itdamu.mallapp.helper.SQLiteHandler;
+import kz.itdamu.mallapp.helper.SessionManager;
 
 
 public class BaseActivity extends AppCompatActivity {
@@ -31,11 +34,20 @@ public class BaseActivity extends AppCompatActivity {
     public static final int SCREEN_VIEW = 2;
     public static final int SCREEN_FEEDBACK = 3;
     public static final int SCREEN_ABOUT = 4;
+    public static final int SCREEN_LOGIN = 5;
+    public static final int SCREEN_REGISTER = 6;
+    public static final int SCREEN_LOGOUT = 7;
     protected Drawer drawer;
+    protected AccountHeader accountHeader;
     private Toolbar toolbar;
+    private SessionManager sessionManager;
+    private User user;
+    private SQLiteHandler db;
 
     protected Drawer initDrawer(Toolbar toolbar) {
         this.toolbar = toolbar;
+        sessionManager = new SessionManager(this);
+        db = new SQLiteHandler(getApplicationContext());
         DrawerBuilder drawerBuilder = new DrawerBuilder()
                 .withActivity(this)
                 .withToolbar(toolbar)
@@ -61,6 +73,20 @@ public class BaseActivity extends AppCompatActivity {
                                 //intent = new Intent(BaseActivity.this, BalanceActivity.class);
                                 //startActivity(intent);
                                 Toast.makeText(BaseActivity.this, "Меню о приложении", Toast.LENGTH_SHORT).show();
+                            case SCREEN_LOGIN:
+                                intent = new Intent(BaseActivity.this, LoginActivity.class);
+                                startActivity(intent);
+                                return true;
+                            case SCREEN_REGISTER:
+                                intent = new Intent(BaseActivity.this, RegisterActivity.class);
+                                startActivity(intent);
+                                return true;
+                            case SCREEN_LOGOUT:
+                                sessionManager.setLogin(false);
+                                db.deleteUsers();
+                                intent = new Intent(BaseActivity.this, MainActivity.class);
+                                startActivity(intent);
+                                finish();
                                 return true;
                             case SCREEN_FEEDBACK:
                                 //intent = new Intent(BaseActivity.this, BalanceActivity.class);
@@ -75,9 +101,33 @@ public class BaseActivity extends AppCompatActivity {
                         }
                     }
                 });
-        drawerBuilder.withHeader(R.layout.drawer_header);
+        if(sessionManager.isLoggedIn()){
+            user = db.getUserDetails();
+            accountHeader = createAccountHeader();
+            drawerBuilder.withAccountHeader(accountHeader);
+        } else {
+            drawerBuilder.withHeader(R.layout.drawer_header);
+        }
         drawer = drawerBuilder.build();
         return drawer;
+    }
+
+    protected void initToolbar(Toolbar toolbar){
+        this.toolbar = toolbar;
+    }
+
+    private AccountHeader createAccountHeader() {
+        IProfile profile = new ProfileDrawerItem()
+                .withName("Вы вошли как, " + user.getName())
+                .withEmail(user.getEmail());
+
+        return new AccountHeaderBuilder()
+                .withActivity(this)
+                .withHeaderBackground(getResources().getDrawable(R.drawable.navigation_header))
+                .addProfiles(profile)
+                .withProfileImagesClickable(false)
+                .withSelectionListEnabled(false)
+                .build();
     }
 
     private IDrawerItem[] initDrawerItems() {
@@ -122,6 +172,33 @@ public class BaseActivity extends AppCompatActivity {
                 .withSelectedTextColorRes(R.color.cyan_900)
                 .withSelectedColor(android.R.color.transparent)
                 .withIdentifier(SCREEN_ABOUT));
+        if(!sessionManager.isLoggedIn()){
+            items.add(new PrimaryDrawerItem()
+                    .withName(R.string.drawer_item_login)
+                    .withIcon(R.drawable.ic_attachment)
+                    .withSelectedIcon(R.drawable.ic_attachment)
+                    .withTextColorRes(R.color.grey_700)
+                    .withSelectedTextColorRes(R.color.cyan_900)
+                    .withSelectedColor(android.R.color.transparent)
+                    .withIdentifier(SCREEN_LOGIN));
+            items.add(new PrimaryDrawerItem()
+                    .withName(R.string.drawer_item_register)
+                    .withIcon(R.drawable.ic_attachment)
+                    .withSelectedIcon(R.drawable.ic_attachment)
+                    .withTextColorRes(R.color.grey_700)
+                    .withSelectedTextColorRes(R.color.cyan_900)
+                    .withSelectedColor(android.R.color.transparent)
+                    .withIdentifier(SCREEN_REGISTER));
+        } else {
+            items.add(new PrimaryDrawerItem()
+                    .withName(R.string.drawer_item_logout)
+                    .withIcon(R.drawable.ic_attachment)
+                    .withSelectedIcon(R.drawable.ic_attachment)
+                    .withTextColorRes(R.color.grey_700)
+                    .withSelectedTextColorRes(R.color.cyan_900)
+                    .withSelectedColor(android.R.color.transparent)
+                    .withIdentifier(SCREEN_LOGOUT));
+        }
         return items.toArray(new IDrawerItem[items.size()]);
     }
 
