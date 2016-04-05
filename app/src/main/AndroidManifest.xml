@@ -41,8 +41,8 @@
             android:name=".activity.LoginActivity"
             android:label="@string/title_activity_login"
             android:launchMode="singleTop"
-            android:windowSoftInputMode="adjustPan"
-            android:parentActivityName=".activity.MainActivity" >
+            android:parentActivityName=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kz.itdamu.mallapp.activity.MainActivity" />
@@ -51,11 +51,53 @@
             android:name=".activity.RegisterActivity"
             android:label="@string/title_activity_register"
             android:launchMode="singleTop"
-            android:windowSoftInputMode="adjustPan"
-            android:parentActivityName=".activity.MainActivity">
+            android:parentActivityName=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kz.itdamu.mallapp.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ManageShopActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_manage_shop"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kz.itdamu.mallapp.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AddShopActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_add_shop"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.ManageShopActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kz.itdamu.mallapp.activity.ManageShopActivity" />
+        </activity>
+        <activity
+            android:name=".activity.EditShopActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_edit_shop"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.ManageShopActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kz.itdamu.mallapp.activity.ManageShopActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ManageGoodsActivity"
+            android:label="@string/title_activity_manage_goods"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.ManageShopActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kz.itdamu.mallapp.activity.ManageShopActivity" />
         </activity>
     </application>
 

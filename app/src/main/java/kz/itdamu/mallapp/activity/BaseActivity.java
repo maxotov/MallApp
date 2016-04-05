@@ -36,7 +36,8 @@ public class BaseActivity extends AppCompatActivity {
     public static final int SCREEN_ABOUT = 4;
     public static final int SCREEN_LOGIN = 5;
     public static final int SCREEN_REGISTER = 6;
-    public static final int SCREEN_LOGOUT = 7;
+    public static final int SCREEN_MY_SHOPS = 7;
+    public static final int SCREEN_LOGOUT = 8;
     protected Drawer drawer;
     protected AccountHeader accountHeader;
     private Toolbar toolbar;
@@ -60,9 +61,8 @@ public class BaseActivity extends AppCompatActivity {
                         Intent  intent;
                         switch (identifier) {
                             case SCREEN_MAIN:
-                                //intent = new Intent(BaseActivity.this, SearchActivity.class);
-                                Toast.makeText(BaseActivity.this, "Меню о приложении", Toast.LENGTH_SHORT).show();
-                                // startActivity(intent);
+                                intent = new Intent(BaseActivity.this, MainActivity.class);
+                                startActivity(intent);
                                 return true;
                             case SCREEN_LIKE:
                                 //intent = new Intent(BaseActivity.this, AddDrugActivity.class);
@@ -87,6 +87,10 @@ public class BaseActivity extends AppCompatActivity {
                                 intent = new Intent(BaseActivity.this, MainActivity.class);
                                 startActivity(intent);
                                 finish();
+                                return true;
+                            case SCREEN_MY_SHOPS:
+                                intent = new Intent(BaseActivity.this, ManageShopActivity.class);
+                                startActivity(intent);
                                 return true;
                             case SCREEN_FEEDBACK:
                                 //intent = new Intent(BaseActivity.this, BalanceActivity.class);
@@ -118,7 +122,7 @@ public class BaseActivity extends AppCompatActivity {
 
     private AccountHeader createAccountHeader() {
         IProfile profile = new ProfileDrawerItem()
-                .withName("Вы вошли как, " + user.getName())
+                .withName("Вы вошли как " + user.getName())
                 .withEmail(user.getEmail());
 
         return new AccountHeaderBuilder()
@@ -190,6 +194,14 @@ public class BaseActivity extends AppCompatActivity {
                     .withSelectedColor(android.R.color.transparent)
                     .withIdentifier(SCREEN_REGISTER));
         } else {
+            items.add(new PrimaryDrawerItem()
+                    .withName(R.string.drawer_item_my_shops)
+                    .withIcon(R.drawable.ic_attachment)
+                    .withSelectedIcon(R.drawable.ic_attachment)
+                    .withTextColorRes(R.color.grey_700)
+                    .withSelectedTextColorRes(R.color.cyan_900)
+                    .withSelectedColor(android.R.color.transparent)
+                    .withIdentifier(SCREEN_MY_SHOPS));
             items.add(new PrimaryDrawerItem()
                     .withName(R.string.drawer_item_logout)
                     .withIcon(R.drawable.ic_attachment)

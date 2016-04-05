@@ -16,8 +16,15 @@ public class Shop {
     private int mall_id;
     private String c_date;
     private String m_date;
+    private int view;
 
+    public int getView() {
+        return view;
+    }
 
+    public void setView(int view) {
+        this.view = view;
+    }
     public int getId() {
         return id;
     }

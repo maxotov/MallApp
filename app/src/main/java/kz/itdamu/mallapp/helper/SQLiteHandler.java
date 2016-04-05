@@ -40,7 +40,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_LOGIN_TABLE = "CREATE TABLE " + TABLE_USER + "("
-                + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
+                + KEY_ID + " INTEGER," + KEY_NAME + " TEXT,"
                 + KEY_EMAIL + " TEXT UNIQUE, " + KEY_PHONE + " TEXT, " + KEY_API + " TEXT, " + KEY_DEVICE + " TEXT, "
                 + KEY_CREATED_AT + " TEXT, " + KEY_MODIFIED_AT + " TEXT" + ")";
         db.execSQL(CREATE_LOGIN_TABLE);
@@ -62,6 +62,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     public void addUser(User user) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
+        values.put(KEY_ID, user.getId());
         values.put(KEY_NAME, user.getName()); // Name
         values.put(KEY_EMAIL, user.getEmail()); // Email
         values.put(KEY_PHONE, user.getPhone()); // Email
@@ -89,6 +90,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         // Move to first row
         cursor.moveToFirst();
         if (cursor.getCount() > 0) {
+            user.setId(cursor.getInt(0));
             user.setName(cursor.getString(1));
             user.setEmail(cursor.getString(2));
             user.setPhone(cursor.getString(3));
