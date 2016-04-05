@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="kz.itdamu.mallapp.activity.ManageShopActivity">
+    <item android:id="@+id/action_add_shop" android:icon="@drawable/ic_plus" android:title="AddShop"
+        android:orderInCategory="200" app:showAsAction="collapseActionView|ifRoom" />
+</menu>

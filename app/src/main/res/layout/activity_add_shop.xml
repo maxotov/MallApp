@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="kz.itdamu.mallapp.activity.AddShopActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/toolbar">
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/shop_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shop_title"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="20dip"
+            android:layout_margin="10dp" />
+
+        <EditText
+            android:id="@+id/shop_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shop_number"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="20dip"
+            android:layout_below="@id/shop_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/shop_main_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shop_main_phone"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="20dip"
+            android:layout_below="@id/shop_number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:phoneNumber="true" />
+
+        <EditText
+            android:id="@+id/shop_extra_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shop_extra_phone"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="20dip"
+            android:layout_below="@id/shop_main_phone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:phoneNumber="true" />
+
+        <EditText
+            android:id="@+id/shop_site"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shop_site"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="20dip"
+            android:layout_below="@id/shop_extra_phone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/shop_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shop_description"
+            android:padding="5dip"
+            android:singleLine="false"
+            android:textColor="#999999"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="20dip"
+            android:layout_below="@id/shop_site"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:linksClickable="false"
+            android:longClickable="false"
+            android:autoText="false" />
+
+        <TextView
+            android:layout_below="@+id/shop_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dip"
+            android:id="@+id/selectMallName"
+            android:text="@string/shop_mall" />
+
+        <TextView
+            android:layout_below="@+id/selectMallName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dip"
+            android:id="@+id/selectCategoryName"
+            android:text="@string/shop_category" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shop_add_message"
+                android:id="@+id/btnAddShop"
+                android:layout_below="@+id/selectCategoryName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/theme_primary"
+                android:textColor="@color/white" />
+
+    </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

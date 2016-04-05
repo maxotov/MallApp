@@ -6,6 +6,7 @@
     <string name="drawer_item_login">Войти</string>
     <string name="drawer_item_register">Регистрация</string>
     <string name="drawer_item_logout">Выйти</string>
+    <string name="drawer_item_my_shops">Мои магазины</string>
     <string name="drawer_item_like">Избранные</string>
     <string name="drawer_item_view">Просмотренные ранее</string>
     <string name="drawer_item_about">О приложении</string>
@@ -21,5 +22,24 @@
     <string name="btn_login">ВОЙТИ</string>
     <string name="btn_register">ЗАРЕГИСТРИРОВАТЬСЯ</string>
     <string name="btn_link_to_register">Зарегистрироваться</string>
-    <string name="test_git">Test</string>
+    <string name="title_activity_manage_shop">ManageShopActivity</string>
+    <string name="title_activity_add_shop">AddShopActivity</string>
+
+    <string name="shop_title">Название магазина</string>
+    <string name="shop_number">Номер магазина</string>
+    <string name="shop_main_phone">Главный телефон</string>
+    <string name="shop_phone">Телефон</string>
+    <string name="shop_extra_phone">Второй телефон</string>
+    <string name="shop_site">Сайт</string>
+    <string name="shop_description">Описание</string>
+    <string name="shop_mall">Выберите торговый центр</string>
+    <string name="shop_mall_name">Торговый центр</string>
+    <string name="shop_category">Выберите категория</string>
+    <string name="shop_category_name">Категория</string>
+    <string name="shop_add_message">Добавить</string>
+    <string name="shop_edit_message">Редактировать</string>
+    <string name="title_activity_edit_shop">EditShopActivity</string>
+    <string name="title_activity_manage_goods"></string>
+    <string name="manage_shop_detail_display">показать/скрыть информацию</string>
+
 </resources>
