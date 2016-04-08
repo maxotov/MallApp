@@ -14,6 +14,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import kz.itdamu.mallapp.R;
+import kz.itdamu.mallapp.activity.MallMapActivity;
 import kz.itdamu.mallapp.activity.ShopActivity;
 import kz.itdamu.mallapp.entity.Mall;
 
@@ -94,6 +95,7 @@ public class MallAdapter extends RecyclerView.Adapter {
 
             ((MallViewHolder) holder).name.setText(mall.getName());
             ((MallViewHolder) holder).mallId.setText(String.valueOf(mall.getId()));
+            ((MallViewHolder) holder).mall_address.setText(mall.getAddress());
         } else {
             ((ProgressViewHolder) holder).progressBar.setIndeterminate(true);
         }
@@ -115,11 +117,15 @@ public class MallAdapter extends RecyclerView.Adapter {
     public class MallViewHolder extends RecyclerView.ViewHolder {
         public TextView name;
         public TextView mallId;
+        public TextView mall_address;
+        public TextView display_map;
 
         public MallViewHolder(View v) {
             super(v);
             name = (TextView) v.findViewById(R.id.mall_name);
             mallId = (TextView) v.findViewById(R.id.mall_id);
+            mall_address = (TextView)v.findViewById(R.id.mall_address);
+            display_map = (TextView)v.findViewById(R.id.show_map);
 
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -129,6 +135,19 @@ public class MallAdapter extends RecyclerView.Adapter {
                      intent.putExtra("id", mallId.getText().toString());
                      intent.putExtra("title", name.getText().toString());
                      activity.startActivity(intent);
+                }
+            });
+
+            display_map.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(activity, MallMapActivity.class);
+                    intent.putExtra("mall_name", name.getText().toString());
+                    Mall m = getMallById(Integer.parseInt(mallId.getText().toString()));
+                    intent.putExtra("mall_lat", m.getLat());
+                    intent.putExtra("mall_lng", m.getLng());
+                    intent.putExtra("address", mall_address.getText().toString());
+                    activity.startActivity(intent);
                 }
             });
         }
@@ -141,5 +160,13 @@ public class MallAdapter extends RecyclerView.Adapter {
             super(v);
             progressBar = (ProgressBar) v.findViewById(R.id.progressBar1);
         }
+    }
+
+    private Mall getMallById(int id){
+        Mall mall = null;
+        for(Mall m: mallList){
+            if(m.getId()==id) {mall = m; break;}
+        }
+        return mall;
     }
 }

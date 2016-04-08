@@ -2,6 +2,7 @@ package kz.itdamu.mallapp.activity;
 
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -18,11 +19,14 @@ import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
 
 import kz.itdamu.mallapp.R;
 import kz.itdamu.mallapp.adapter.MallAdapter;
 import kz.itdamu.mallapp.adapter.SpinMallAdapter;
+import kz.itdamu.mallapp.custom.ClickToSelectEditText;
 import kz.itdamu.mallapp.entity.Category;
 import kz.itdamu.mallapp.entity.Mall;
 import kz.itdamu.mallapp.entity.Message;
@@ -48,14 +52,21 @@ public class AddShopActivity extends BaseActivity {
     private int selectedMallIndex = -1;
     private int selectedCategoryIndex = -1;
 
+    private TextInputLayout shopTitleLayout;
+    private TextInputLayout shopPhoneLayout;
+    private TextInputLayout shopDescriptionLayout;
+    private TextInputLayout shopMallLayout;
+    private TextInputLayout shopCategoryLayout;
+
     private EditText shopTitle;
     private EditText shopNumber;
     private EditText shopMainPhone;
     private EditText shopExtraPhone;
     private EditText shopSite;
     private EditText shopDescription;
-    private TextView txtSelectedMall;
-    private TextView txtSelectedCategory;
+    ClickToSelectEditText<Mall> editTextSelectMall;
+    ClickToSelectEditText<Category> editTextSelectCategory;
+
     private Button btnAddShop;
 
     @Override
@@ -71,41 +82,47 @@ public class AddShopActivity extends BaseActivity {
         }
         db = new SQLiteHandler(getApplicationContext());
         user = db.getUserDetails();
+        shopTitleLayout = (TextInputLayout)findViewById(R.id.shop_title_layout);
+        shopPhoneLayout = (TextInputLayout)findViewById(R.id.shop_phone_layout);
+        shopDescriptionLayout = (TextInputLayout)findViewById(R.id.shop_description_layout);
+        shopMallLayout = (TextInputLayout)findViewById(R.id.shop_mall_layout);
+        shopCategoryLayout = (TextInputLayout)findViewById(R.id.shop_category_layout);
+
         shopTitle = (EditText)findViewById(R.id.shop_title);
         shopNumber = (EditText)findViewById(R.id.shop_number);
         shopMainPhone = (EditText)findViewById(R.id.shop_main_phone);
         shopExtraPhone = (EditText)findViewById(R.id.shop_extra_phone);
         shopSite = (EditText)findViewById(R.id.shop_site);
         shopDescription = (EditText)findViewById(R.id.shop_description);
-        txtSelectedMall = (TextView)findViewById(R.id.selectMallName);
-        txtSelectedCategory = (TextView)findViewById(R.id.selectCategoryName);
+        editTextSelectMall = (ClickToSelectEditText<Mall>) findViewById(R.id.selectMallName);
+        editTextSelectCategory = (ClickToSelectEditText<Category>) findViewById(R.id.selectCategoryName);
         btnAddShop = (Button)findViewById(R.id.btnAddShop);
         new LoadMalls().execute();
         new LoadCategories().execute();
-        txtSelectedMall.setOnClickListener(new View.OnClickListener() {
+        editTextSelectMall.setOnItemSelectedListener(new ClickToSelectEditText.OnItemSelectedListener<Mall>() {
             @Override
-            public void onClick(View v) {
-                selectMallDialog(mallNames, selectedMallIndex);
+            public void onItemSelectedListener(Mall item, int selectedIndex) {
+                selectedMallIndex = selectedIndex;
             }
         });
-        txtSelectedCategory.setOnClickListener(new View.OnClickListener() {
+        editTextSelectCategory.setOnItemSelectedListener(new ClickToSelectEditText.OnItemSelectedListener<Category>() {
             @Override
-            public void onClick(View v) {
-                selectCategoryDialog(categoryNames, selectedCategoryIndex);
+            public void onItemSelectedListener(Category item, int selectedIndex) {
+                selectedCategoryIndex = selectedIndex;
             }
         });
         btnAddShop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String mallId = getMallId(txtSelectedMall.getText().toString());
-                String categoryId = getCategoryId(txtSelectedCategory.getText().toString());
+                String mallId = getMallId(editTextSelectMall.getText().toString());
+                String categoryId = getCategoryId(editTextSelectCategory.getText().toString());
                 String title = shopTitle.getText().toString();
                 String mainPhone = shopMainPhone.getText().toString();
                 String extraPhone = shopExtraPhone.getText().toString();
                 String number = shopNumber.getText().toString();
                 String site = shopSite.getText().toString();
                 String desc = shopDescription.getText().toString();
-                if(!mallId.equals("") && !categoryId.equals("") && Helper.validateParams(title, mainPhone, desc)){
+                if(validateData(title, mainPhone, desc, mallId, categoryId)){
                     ShopApi api = ServiceGenerator.createService(ShopApi.class, Helper.API_URL);
                     api.create(title, number, mainPhone, extraPhone, site, desc, String.valueOf(user.getId()), categoryId, mallId, new Callback<Message>() {
                         @Override
@@ -134,7 +151,43 @@ public class AddShopActivity extends BaseActivity {
 
     }
 
-    private void selectMallDialog(String[] mallNames, final int selectedIndex) {
+    private boolean validateData(String title, String phone, String desc, String mallId, String categoryId) {
+        boolean result = true;
+        if (Helper.isEmpty(title)) {
+            // We set the error message
+            shopTitleLayout.setError(getString(R.string.error_empty_title));
+            result = false;
+        }
+        else // We remove error messages
+            shopTitleLayout.setErrorEnabled(false);
+
+        if (Helper.isEmpty(phone)) {
+            // We set the error message
+            shopPhoneLayout.setError(getString(R.string.error_empty_phone));
+            result = false;
+        }
+        else shopPhoneLayout.setErrorEnabled(false);
+
+        if (Helper.isEmpty(desc)) {
+            shopDescriptionLayout.setError(getString(R.string.error_empty_description));
+            result = false;
+        }
+        else shopDescriptionLayout.setErrorEnabled(false);
+
+        if(mallId==null || mallId.equals("")){
+            shopMallLayout.setError(getString(R.string.error_empty_mall));
+            result = false;
+        } else shopMallLayout.setErrorEnabled(false);
+
+        if(categoryId==null || categoryId.equals("")){
+            shopCategoryLayout.setError(getString(R.string.error_empty_category));
+            result = false;
+        } else shopCategoryLayout.setErrorEnabled(false);
+
+        return result;
+    }
+
+    /**private void selectMallDialog(String[] mallNames, final int selectedIndex) {
         new MaterialDialog.Builder(AddShopActivity.this)
                 .title(R.string.shop_mall)
                 .items(mallNames)
@@ -166,7 +219,7 @@ public class AddShopActivity extends BaseActivity {
                 .itemColorRes(R.color.colorPrimary)
                 .negativeText("Отмена")
                 .show();
-    }
+    }*/
 
 
     @Override
@@ -194,6 +247,7 @@ public class AddShopActivity extends BaseActivity {
         }
         protected void onPostExecute(String unused) {
             if (!malls.isEmpty()) {
+                editTextSelectMall.setItems(malls);
                 mallNames = new String[malls.size()];
                 for(int i=0; i<malls.size(); i++){
                     mallNames[i] = malls.get(i).getName();
@@ -210,6 +264,7 @@ public class AddShopActivity extends BaseActivity {
         }
         protected void onPostExecute(String unused) {
             if (!categories.isEmpty()) {
+                editTextSelectCategory.setItems(categories);
                 categoryNames = new String[categories.size()];
                 for(int i=0; i<categories.size(); i++){
                     categoryNames[i] = categories.get(i).getTitle();
