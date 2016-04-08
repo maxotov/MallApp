@@ -32,14 +32,27 @@
     <string name="shop_extra_phone">Второй телефон</string>
     <string name="shop_site">Сайт</string>
     <string name="shop_description">Описание</string>
-    <string name="shop_mall">Выберите торговый центр</string>
+    <string name="shop_mall">Выберите центра</string>
     <string name="shop_mall_name">Торговый центр</string>
-    <string name="shop_category">Выберите категория</string>
+    <string name="shop_category">Выберите категорию</string>
     <string name="shop_category_name">Категория</string>
     <string name="shop_add_message">Добавить</string>
     <string name="shop_edit_message">Редактировать</string>
     <string name="title_activity_edit_shop">EditShopActivity</string>
     <string name="title_activity_manage_goods"></string>
     <string name="manage_shop_detail_display">показать/скрыть информацию</string>
+
+    <string name="error_empty_title">Название не может пустым</string>
+    <string name="error_empty_description">добавьте описание магазина</string>
+    <string name="error_empty_category">Пожалуйста, выберите категорию</string>
+    <string name="error_empty_mall">Пожалуйста, выберите центру</string>
+    <string name="error_empty_phone">Главный телефон не может пустым</string>
+    <string name="title_activity_mall_map">Map</string>
+    <string name="put_route">Проложить маршрут</string>
+    <string name="GPSAlertDialogTitle">GPS настройка</string>
+    <string name="GPSAlertDialogMessage">GPS не включен. Вы хотите перейти к меню настройки?</string>
+    <string name="settings">Да</string>
+    <string name="cancel">Отмена</string>
+    <string name="display_on_map">на карте</string>
 
 </resources>

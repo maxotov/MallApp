@@ -24,16 +24,32 @@
             android:layout_height="wrap_content"
             android:visibility="gone" />
 
-        <!-- Title Of Song-->
         <TextView
             android:id="@+id/mall_name"
-            android:layout_width="fill_parent"
+            android:textColor="@color/title"
+            android:textSize="16dp"
+            android:text="@string/title_activity_mall_map"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#040404"
-            android:typeface="sans"
-            android:textSize="18sp"
-            android:text="@string/action_settings"
-            android:paddingLeft="10dp" />
+            android:layout_toLeftOf="@+id/show_map"
+            android:layout_toStartOf="@+id/show_map"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/mall_address"
+            android:layout_below="@id/mall_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/show_map"
+            android:text="@string/display_on_map"
+            android:textColor="@color/year"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>

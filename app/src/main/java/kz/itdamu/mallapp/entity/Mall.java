@@ -1,9 +1,11 @@
 package kz.itdamu.mallapp.entity;
 
+import kz.itdamu.mallapp.custom.Listable;
+
 /**
  * Created by Aibol on 08.03.2016.
  */
-public class Mall {
+public class Mall implements Listable{
     private int id;
     private String name;
     private String address;
@@ -67,5 +69,10 @@ public class Mall {
 
     public void setM_date(String m_date) {
         this.m_date = m_date;
+    }
+
+    @Override
+    public String getLabel() {
+        return name;
     }
 }

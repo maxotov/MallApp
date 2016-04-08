@@ -1,9 +1,11 @@
 package kz.itdamu.mallapp.entity;
 
+import kz.itdamu.mallapp.custom.Listable;
+
 /**
  * Created by Aibol on 27.03.2016.
  */
-public class Category {
+public class Category implements Listable{
     private int id;
     private String title;
     private String c_date;
@@ -42,5 +44,8 @@ public class Category {
 
     private String m_date;
 
-
+    @Override
+    public String getLabel() {
+        return title;
+    }
 }

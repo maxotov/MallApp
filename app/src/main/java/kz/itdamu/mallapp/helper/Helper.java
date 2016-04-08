@@ -1,5 +1,13 @@
 package kz.itdamu.mallapp.helper;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.provider.Settings;
+
+import kz.itdamu.mallapp.R;
+
 /**
  * Created by Aibol on 08.03.2016.
  */
@@ -25,5 +33,28 @@ public class Helper {
         return true;
     }
 
+    public static void showSettingsGPS(final Activity activity){
+        final AlertDialog.Builder alertDialog = new AlertDialog.Builder(activity);
+        alertDialog.setTitle(R.string.GPSAlertDialogTitle);
+        alertDialog.setMessage(R.string.GPSAlertDialogMessage);
+        alertDialog.setPositiveButton(R.string.settings, new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                activity.startActivity(intent);
+            }
+        });
+        alertDialog.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                dialog.dismiss();
+            }
+        });
+        alertDialog.show();
+    }
 
 }
