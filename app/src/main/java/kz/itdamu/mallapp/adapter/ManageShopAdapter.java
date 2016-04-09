@@ -134,6 +134,7 @@ public class ManageShopAdapter  extends RecyclerView.Adapter {
                     Log.d("Shop id = ", shopId.getText().toString());
                     Intent intent = new Intent(activity, ManageGoodsActivity.class);
                      intent.putExtra("shopId", shopId.getText().toString());
+                     intent.putExtra("shopName",name.toString());
                      activity.startActivity(intent);
                 }
             });

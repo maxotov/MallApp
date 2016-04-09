@@ -111,6 +111,7 @@ public class AddShopActivity extends BaseActivity {
                 selectedCategoryIndex = selectedIndex;
             }
         });
+
         btnAddShop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -122,6 +123,7 @@ public class AddShopActivity extends BaseActivity {
                 String number = shopNumber.getText().toString();
                 String site = shopSite.getText().toString();
                 String desc = shopDescription.getText().toString();
+
                 if(validateData(title, mainPhone, desc, mallId, categoryId)){
                     ShopApi api = ServiceGenerator.createService(ShopApi.class, Helper.API_URL);
                     api.create(title, number, mainPhone, extraPhone, site, desc, String.valueOf(user.getId()), categoryId, mallId, new Callback<Message>() {
