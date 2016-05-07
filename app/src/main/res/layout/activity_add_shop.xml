@@ -124,11 +124,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="8dp">
-            <kz.itdamu.mallapp.custom.ClickToSelectEditText
+            <kz.itdamu.mallapp.custom.CategoryEditText
                 android:id="@+id/selectCategoryName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
+                android:inputType="textMultiLine"
                 android:hint="@string/shop_category" />
         </android.support.design.widget.TextInputLayout>
 

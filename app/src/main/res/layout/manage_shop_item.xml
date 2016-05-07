@@ -49,15 +49,13 @@
             android:paddingLeft="10dp"
             android:paddingTop="5dp" />
 
-        <ImageView
-            android:layout_width="22dp"
-            android:layout_height="22dp"
+        <TextView
             android:id="@+id/editShopView"
-            android:layout_below="@+id/shop_id"
-            android:src="@drawable/ic_pencil"
+            android:text="@string/shop_edit_message"
+            android:textColor="@color/year"
+            android:layout_width="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="10dp" />
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>
