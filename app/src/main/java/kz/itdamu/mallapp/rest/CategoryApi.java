@@ -15,6 +15,12 @@ public interface CategoryApi {
     @GET("/categories")
     List<Category> getCategories();
 
+    @GET("/nestedCategories")
+    List<Category> getNestedCategories();
+
+    @GET("/categoriesByParent")
+    List<Category> getCategoriesByParent();
+
     @GET("/getCategoryById")
     Category getCategory(@Query("category_id") String categoryId);
 }

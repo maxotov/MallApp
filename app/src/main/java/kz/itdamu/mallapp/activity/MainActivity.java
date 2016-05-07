@@ -132,7 +132,7 @@ public class MainActivity extends BaseActivity {
                                 sessionManager.setDevice(regId);
                                 Toast.makeText(getApplicationContext(), "User Device successfully created", Toast.LENGTH_LONG).show();
                             } else {
-                                Toast.makeText(getApplicationContext(), "User Device failed", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), message.getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         }
                         @Override

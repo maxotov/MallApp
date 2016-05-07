@@ -23,6 +23,7 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import java.util.List;
 
 import kz.itdamu.mallapp.R;
+import kz.itdamu.mallapp.custom.CategoryEditText;
 import kz.itdamu.mallapp.custom.ClickToSelectEditText;
 import kz.itdamu.mallapp.entity.Category;
 import kz.itdamu.mallapp.entity.Mall;
@@ -61,7 +62,7 @@ public class EditShopActivity extends BaseActivity {
     private EditText shopSite;
     private EditText shopDescription;
     ClickToSelectEditText<Mall> editTextSelectMall;
-    ClickToSelectEditText<Category> editTextSelectCategory;
+    CategoryEditText<Category> editTextSelectCategory;
     private Button btnEditShop;
     private ProgressBar progressBar;
     private LinearLayout editShopLayout;
@@ -99,7 +100,7 @@ public class EditShopActivity extends BaseActivity {
         shopSite = (EditText)findViewById(R.id.shop_site);
         shopDescription = (EditText)findViewById(R.id.shop_description);
         editTextSelectMall = (ClickToSelectEditText<Mall>) findViewById(R.id.selectMallName);
-        editTextSelectCategory = (ClickToSelectEditText<Category>) findViewById(R.id.selectCategoryName);
+        editTextSelectCategory = (CategoryEditText<Category>) findViewById(R.id.selectCategoryName);
         btnEditShop = (Button)findViewById(R.id.btnEditShop);
         new LoadShop().execute();
         editTextSelectMall.setOnItemSelectedListener(new ClickToSelectEditText.OnItemSelectedListener<Mall>() {
@@ -108,26 +109,21 @@ public class EditShopActivity extends BaseActivity {
                 selectedMallIndex = selectedIndex;
             }
         });
-        editTextSelectCategory.setOnItemSelectedListener(new ClickToSelectEditText.OnItemSelectedListener<Category>() {
-            @Override
-            public void onItemSelectedListener(Category item, int selectedIndex) {
-                selectedCategoryIndex = selectedIndex;
-            }
-        });
         btnEditShop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String mallId = getMallId(editTextSelectMall.getText().toString());
-                String categoryId = getCategoryId(editTextSelectCategory.getText().toString());
+                String categoryNames = editTextSelectCategory.getText().toString();
                 String title = shopTitle.getText().toString();
                 String mainPhone = shopMainPhone.getText().toString();
                 String extraPhone = shopExtraPhone.getText().toString();
                 String number = shopNumber.getText().toString();
                 String site = shopSite.getText().toString();
                 String desc = shopDescription.getText().toString();
-                if(validateData(title, mainPhone, desc, mallId, categoryId)){
+                if(validateData(title, mainPhone, desc, mallId, categoryNames)){
+                    String categoryIds = getCategoryIds(categoryNames);
                     ShopApi api = ServiceGenerator.createService(ShopApi.class, Helper.API_URL);
-                    api.update(shopId, title, number, mainPhone, extraPhone, site, desc, categoryId, mallId, new Callback<Message>() {
+                    api.update(shopId, title, number, mainPhone, extraPhone, site, desc, categoryIds, mallId, new Callback<Message>() {
                         @Override
                         public void success(Message message, retrofit.client.Response response) {
                             Log.e("message", message.getMessage());
@@ -154,7 +150,7 @@ public class EditShopActivity extends BaseActivity {
 
     }
 
-    private boolean validateData(String title, String phone, String desc, String mallId, String categoryId) {
+    private boolean validateData(String title, String phone, String desc, String mallId, String categoryNames) {
         boolean result = true;
         if (Helper.isEmpty(title)) {
             shopTitleLayout.setError(getString(R.string.error_empty_title));
@@ -179,10 +175,20 @@ public class EditShopActivity extends BaseActivity {
             result = false;
         } else shopMallLayout.setErrorEnabled(false);
 
-        if(categoryId==null || categoryId.equals("")){
+        if(categoryNames==null || categoryNames.equals("")){
             shopCategoryLayout.setError(getString(R.string.error_empty_category));
             result = false;
-        } else shopCategoryLayout.setErrorEnabled(false);
+        } else {
+            Log.e("categoryNames == >", categoryNames);
+            String[] parts = categoryNames.split("\\|");
+            Log.e("length == >", parts.length + "");
+            if (parts.length > 3) {
+                shopCategoryLayout.setError(getString(R.string.error_count_selected_category));
+                result = false;
+            } else {
+                shopCategoryLayout.setErrorEnabled(false);
+            }
+        }
 
         return result;
     }
@@ -254,7 +260,7 @@ public class EditShopActivity extends BaseActivity {
             MallApi mallClient = ServiceGenerator.createService(MallApi.class, Helper.API_URL);
             malls = mallClient.getMalls();
             CategoryApi categoryClient = ServiceGenerator.createService(CategoryApi.class, Helper.API_URL);
-            categories = categoryClient.getCategories();
+            categories = categoryClient.getNestedCategories();
             ShopApi client = ServiceGenerator.createService(ShopApi.class, Helper.API_URL);
             shop = client.getShopById(shopId);
             return null;
@@ -274,7 +280,29 @@ public class EditShopActivity extends BaseActivity {
                 shopSite.setText(shop.getSite());
                 shopDescription.setText(shop.getDescription());
                 editTextSelectMall.setText(getMallName(shop.getMall_id()));
-                editTextSelectCategory.setText(getCategoryTitle(shop.getCategory_id()));
+                String shopCategoryNames = "";
+                for(int i=0; i<shop.getCategories().size(); i++){
+                    shopCategoryNames += shop.getCategories().get(i).getTitle();
+                    if(i+1 < shop.getCategories().size()){
+                        shopCategoryNames += " | ";
+                    }
+                }
+                editTextSelectCategory.setText(shopCategoryNames);
+                root:for(int i=0; i<shop.getCategories().size(); i++){
+                    for(Category c: categories){
+                        if(c.getId()==shop.getCategories().get(i).getId()){
+                            c.setChecked(true);
+                            continue root;
+                        }
+                        for(Category category: c.getSub_categories()){
+                            if(category.getId()==shop.getCategories().get(i).getId()){
+                                category.setChecked(true);
+                                continue root;
+                            }
+                        }
+                    }
+                }
+                //editTextSelectCategory.setText(getCategoryTitle(shop.getCategory_id()));
                 /**for(int i=0; i<malls.size(); i++){
                     if(malls.get(i).getId()==shop.getMall_id()) selectedMallIndex = i;
                 }
@@ -309,25 +337,23 @@ public class EditShopActivity extends BaseActivity {
         return res;
     }
 
-    private String getCategoryId(String title){
+    private String getCategoryIds(String categoryNames){
         String res = "";
-        for(Category m: categories){
-            if(m.getTitle().equals(title)) {
-                res = m.getId()+"";
-                break;
+        String[] parts = categoryNames.split("\\|");
+        root:for(int i=0; i<parts.length; i++){
+            for(Category category: categories){
+                if(parts[i].trim().equals(category.getTitle())){
+                    res += category.getId() + "_";
+                    continue root;
+                }
+                for(Category subCategory: category.getSub_categories()){
+                    if(parts[i].trim().equals(subCategory.getTitle())){
+                        res += subCategory.getId() + "_";
+                        continue root;
+                    }
+                }
             }
         }
-        return res;
-    }
-
-    private String getCategoryTitle(int cat_id){
-        String res = "";
-        for(Category m: categories){
-            if(m.getId()==cat_id) {
-                res = m.getTitle();
-                break;
-            }
-        }
-        return res;
+        return (!res.equals("")) ? res.substring(0, res.length()-1) : res;
     }
 }

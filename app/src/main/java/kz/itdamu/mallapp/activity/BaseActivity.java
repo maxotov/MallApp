@@ -1,6 +1,8 @@
 package kz.itdamu.mallapp.activity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.support.v4.app.NavUtils;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.ActionBar;
@@ -18,7 +20,10 @@ import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IProfile;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +36,6 @@ import kz.itdamu.mallapp.helper.SessionManager;
 public class BaseActivity extends AppCompatActivity {
     public static final int SCREEN_MAIN = 0;
     public static final int SCREEN_LIKE = 1;
-    public static final int SCREEN_VIEW = 2;
     public static final int SCREEN_FEEDBACK = 3;
     public static final int SCREEN_ABOUT = 4;
     public static final int SCREEN_LOGIN = 5;
@@ -44,6 +48,7 @@ public class BaseActivity extends AppCompatActivity {
     private SessionManager sessionManager;
     private User user;
     private SQLiteHandler db;
+    private String IMG_URL = "http://itdamu.kz/MallBackend/images/icon/app_icon.png";
 
     protected Drawer initDrawer(Toolbar toolbar) {
         this.toolbar = toolbar;
@@ -69,10 +74,6 @@ public class BaseActivity extends AppCompatActivity {
                                 //startActivity(intent);
                                 Toast.makeText(BaseActivity.this, "Меню о приложении", Toast.LENGTH_SHORT).show();
                                 return true;
-                            case SCREEN_VIEW:
-                                //intent = new Intent(BaseActivity.this, BalanceActivity.class);
-                                //startActivity(intent);
-                                Toast.makeText(BaseActivity.this, "Меню о приложении", Toast.LENGTH_SHORT).show();
                             case SCREEN_LOGIN:
                                 intent = new Intent(BaseActivity.this, LoginActivity.class);
                                 startActivity(intent);
@@ -123,7 +124,8 @@ public class BaseActivity extends AppCompatActivity {
     private AccountHeader createAccountHeader() {
         IProfile profile = new ProfileDrawerItem()
                 .withName("Вы вошли как " + user.getName())
-                .withEmail(user.getEmail());
+                .withEmail(user.getEmail())
+                .withIcon(getResources().getDrawable(R.drawable.app_icon));
 
         return new AccountHeaderBuilder()
                 .withActivity(this)
@@ -138,40 +140,32 @@ public class BaseActivity extends AppCompatActivity {
         List<IDrawerItem> items = new ArrayList<>();
         items.add(new PrimaryDrawerItem()
                 .withName(R.string.drawer_item_main)
-                .withIcon(R.drawable.ic_attachment)
-                .withSelectedIcon(R.drawable.ic_attachment)
+                .withIcon(R.drawable.ic_view_headline)
+                .withSelectedIcon(R.drawable.ic_view_headline)
                 .withTextColorRes(R.color.grey_700)
                 .withSelectedTextColorRes(R.color.cyan_900)
                 .withSelectedColor(android.R.color.transparent)
                 .withIdentifier(SCREEN_MAIN));
         items.add(new PrimaryDrawerItem()
                 .withName(R.string.drawer_item_like)
-                .withIcon(R.drawable.ic_image)
-                .withSelectedIcon(R.drawable.ic_image)
+                .withIcon(R.drawable.ic_star_outline)
+                .withSelectedIcon(R.drawable.ic_star_outline)
                 .withTextColorRes(R.color.grey_700)
                 .withSelectedTextColorRes(R.color.cyan_900)
                 .withSelectedColor(android.R.color.transparent)
                 .withIdentifier(SCREEN_LIKE));
         items.add(new PrimaryDrawerItem()
-                .withName(R.string.drawer_item_view)
-                .withIcon(R.drawable.ic_map_marker)
-                .withSelectedIcon(R.drawable.ic_map_marker)
-                .withTextColorRes(R.color.grey_700)
-                .withSelectedTextColorRes(R.color.cyan_900)
-                .withSelectedColor(android.R.color.transparent)
-                .withIdentifier(SCREEN_VIEW));
-        items.add(new PrimaryDrawerItem()
                 .withName(R.string.drawer_item_feedback)
-                .withIcon(R.drawable.ic_emoticon)
-                .withSelectedIcon(R.drawable.ic_emoticon)
+                .withIcon(R.drawable.ic_phone_in_talk)
+                .withSelectedIcon(R.drawable.ic_phone_in_talk)
                 .withTextColorRes(R.color.grey_700)
                 .withSelectedTextColorRes(R.color.cyan_900)
                 .withSelectedColor(android.R.color.transparent)
                 .withIdentifier(SCREEN_FEEDBACK));
         items.add(new PrimaryDrawerItem()
                 .withName(R.string.drawer_item_about)
-                .withIcon(R.drawable.ic_emoticon)
-                .withSelectedIcon(R.drawable.ic_emoticon)
+                .withIcon(R.drawable.ic_information_outline)
+                .withSelectedIcon(R.drawable.ic_information_outline)
                 .withTextColorRes(R.color.grey_700)
                 .withSelectedTextColorRes(R.color.cyan_900)
                 .withSelectedColor(android.R.color.transparent)
@@ -179,16 +173,16 @@ public class BaseActivity extends AppCompatActivity {
         if(!sessionManager.isLoggedIn()){
             items.add(new PrimaryDrawerItem()
                     .withName(R.string.drawer_item_login)
-                    .withIcon(R.drawable.ic_attachment)
-                    .withSelectedIcon(R.drawable.ic_attachment)
+                    .withIcon(R.drawable.ic_login_variant)
+                    .withSelectedIcon(R.drawable.ic_login_variant)
                     .withTextColorRes(R.color.grey_700)
                     .withSelectedTextColorRes(R.color.cyan_900)
                     .withSelectedColor(android.R.color.transparent)
                     .withIdentifier(SCREEN_LOGIN));
             items.add(new PrimaryDrawerItem()
                     .withName(R.string.drawer_item_register)
-                    .withIcon(R.drawable.ic_attachment)
-                    .withSelectedIcon(R.drawable.ic_attachment)
+                    .withIcon(R.drawable.ic_account_plus)
+                    .withSelectedIcon(R.drawable.ic_account_plus)
                     .withTextColorRes(R.color.grey_700)
                     .withSelectedTextColorRes(R.color.cyan_900)
                     .withSelectedColor(android.R.color.transparent)
@@ -196,16 +190,16 @@ public class BaseActivity extends AppCompatActivity {
         } else {
             items.add(new PrimaryDrawerItem()
                     .withName(R.string.drawer_item_my_shops)
-                    .withIcon(R.drawable.ic_attachment)
-                    .withSelectedIcon(R.drawable.ic_attachment)
+                    .withIcon(R.drawable.ic_shopping)
+                    .withSelectedIcon(R.drawable.ic_shopping)
                     .withTextColorRes(R.color.grey_700)
                     .withSelectedTextColorRes(R.color.cyan_900)
                     .withSelectedColor(android.R.color.transparent)
                     .withIdentifier(SCREEN_MY_SHOPS));
             items.add(new PrimaryDrawerItem()
                     .withName(R.string.drawer_item_logout)
-                    .withIcon(R.drawable.ic_attachment)
-                    .withSelectedIcon(R.drawable.ic_attachment)
+                    .withIcon(R.drawable.ic_logout_variant)
+                    .withSelectedIcon(R.drawable.ic_logout_variant)
                     .withTextColorRes(R.color.grey_700)
                     .withSelectedTextColorRes(R.color.cyan_900)
                     .withSelectedColor(android.R.color.transparent)

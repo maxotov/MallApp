@@ -1,5 +1,8 @@
 package kz.itdamu.mallapp.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Aibol on 09.03.2016.
  */
@@ -12,11 +15,11 @@ public class Shop {
     private String site;
     private String description;
     private int user_id;
-    private int category_id;
     private int mall_id;
     private String c_date;
     private String m_date;
     private int view;
+    private List<Category> categories = new ArrayList<>();
 
     public int getView() {
         return view;
@@ -89,14 +92,6 @@ public class Shop {
         this.user_id = user_id;
     }
 
-    public int getCategory_id() {
-        return category_id;
-    }
-
-    public void setCategory_id(int category_id) {
-        this.category_id = category_id;
-    }
-
     public int getMall_id() {
         return mall_id;
     }
@@ -119,5 +114,13 @@ public class Shop {
 
     public void setM_date(String m_date) {
         this.m_date = m_date;
+    }
+
+    public List<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
     }
 }

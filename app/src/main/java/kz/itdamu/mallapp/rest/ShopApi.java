@@ -27,9 +27,9 @@ public interface ShopApi {
 
     @Multipart
     @POST("/createShop")
-    void create(@Part("title") String title, @Part("number_shop") String number_shop, @Part("main_phone") String phone, @Part("extra_phone") String extra_phone, @Part("site") String site, @Part("description") String desc, @Part("user_id") String userId, @Part("category_id") String category_id, @Part("mall_id") String mall_id, Callback<Message> message);
+    void create(@Part("title") String title, @Part("number_shop") String number_shop, @Part("main_phone") String phone, @Part("extra_phone") String extra_phone, @Part("site") String site, @Part("description") String desc, @Part("user_id") String userId, @Part("category_ids") String category_ids, @Part("mall_id") String mall_id, Callback<Message> message);
 
     @Multipart
     @POST("/updateShop")
-    void update(@Part("shop_id") String shop_id, @Part("title") String title, @Part("number_shop") String number_shop, @Part("main_phone") String phone, @Part("extra_phone") String extra_phone, @Part("site") String site, @Part("description") String desc, @Part("category_id") String category_id, @Part("mall_id") String mall_id, Callback<Message> message);
+    void update(@Part("shop_id") String shop_id, @Part("title") String title, @Part("number_shop") String number_shop, @Part("main_phone") String phone, @Part("extra_phone") String extra_phone, @Part("site") String site, @Part("description") String desc, @Part("category_ids") String category_ids, @Part("mall_id") String mall_id, Callback<Message> message);
 }

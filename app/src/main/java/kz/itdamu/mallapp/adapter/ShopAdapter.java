@@ -7,8 +7,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -28,6 +31,7 @@ public class ShopAdapter extends RecyclerView.Adapter {
     private boolean loading;
     private Activity activity;
     private OnLoadMoreListener onLoadMoreListener;
+    private String IMG_URL = "http://itdamu.kz/MallBackend/images/icon/shop";
 
     public ShopAdapter(List<Shop> rows, RecyclerView recyclerView, Activity act) {
         shopList = rows;
@@ -92,6 +96,11 @@ public class ShopAdapter extends RecyclerView.Adapter {
 
             ((ShopViewHolder) holder).name.setText(shop.getTitle());
             ((ShopViewHolder) holder).shopId.setText(String.valueOf(shop.getId()));
+            if(shop.getCategories().get(0).getParent()==0){
+                Picasso.with(activity).load(IMG_URL+shop.getCategories().get(0).getId()+".png").into(((ShopViewHolder) holder).shopIcon);
+            } else {
+                Picasso.with(activity).load(IMG_URL+shop.getCategories().get(0).getParent()+".png").into(((ShopViewHolder) holder).shopIcon);
+            }
         } else {
             ((ProgressViewHolder) holder).progressBar.setIndeterminate(true);
         }
@@ -113,11 +122,13 @@ public class ShopAdapter extends RecyclerView.Adapter {
     public class ShopViewHolder extends RecyclerView.ViewHolder {
         public TextView name;
         public TextView shopId;
+        public ImageView shopIcon;
 
         public ShopViewHolder(View v) {
             super(v);
             name = (TextView) v.findViewById(R.id.shop_name);
             shopId = (TextView) v.findViewById(R.id.shop_id);
+            shopIcon = (ImageView)v.findViewById(R.id.shop_icon);
 
             v.setOnClickListener(new View.OnClickListener() {
                 @Override

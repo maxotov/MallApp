@@ -119,14 +119,14 @@ public class ManageShopAdapter  extends RecyclerView.Adapter {
         public TextView name;
         public TextView shop_view;
         public TextView shopId;
-        public ImageView editShopView;
+        public TextView editShopView;
 
         public ShopViewHolder(View v) {
             super(v);
             name = (TextView) v.findViewById(R.id.shop_name);
             shop_view = (TextView) v.findViewById(R.id.shop_view);
             shopId = (TextView) v.findViewById(R.id.shop_id);
-            editShopView = (ImageView)v.findViewById(R.id.editShopView);
+            editShopView = (TextView)v.findViewById(R.id.editShopView);
 
             v.setOnClickListener(new View.OnClickListener() {
                 @Override

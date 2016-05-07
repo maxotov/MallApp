@@ -100,7 +100,6 @@ public class ManageGoodsActivity extends BaseActivity {
     }
 
     class LoadShop extends AsyncTask<String, String, String> {
-        Category category;
         Mall mall;
         @Override
         protected void onPreExecute() {
@@ -109,8 +108,6 @@ public class ManageGoodsActivity extends BaseActivity {
         protected String doInBackground(String... params) {
             ShopApi client = ServiceGenerator.createService(ShopApi.class, Helper.API_URL);
             shop = client.getShopById(shopId);
-            CategoryApi clientCategory = ServiceGenerator.createService(CategoryApi.class, Helper.API_URL);
-            category = clientCategory.getCategory(shop.getCategory_id()+"");
             MallApi clientMall = ServiceGenerator.createService(MallApi.class, Helper.API_URL);
             mall = clientMall.getMall(shop.getMall_id()+"");
             return null;
@@ -124,7 +121,14 @@ public class ManageGoodsActivity extends BaseActivity {
                 if(!Helper.isEmpty(shop.getExtra_phone())) phoneStr += "\n"+shop.getExtra_phone();
                 txtShopPhone.setText(phoneStr);
                 txtShopSite.setText(shop.getSite());
-                txtShopCategory.setText(category.getTitle());
+                String shopCategoryNames = "";
+                for(int i=0; i<shop.getCategories().size(); i++){
+                    shopCategoryNames += shop.getCategories().get(i).getTitle();
+                    if(i+1 < shop.getCategories().size()){
+                        shopCategoryNames += " | ";
+                    }
+                }
+                txtShopCategory.setText(shopCategoryNames);
                 txtShopMall.setText(mall.getName());
             }
         }

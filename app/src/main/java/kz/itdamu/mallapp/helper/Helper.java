@@ -13,7 +13,7 @@ import kz.itdamu.mallapp.R;
  */
 public class Helper {
 
-    public static final String API_URL = "http://192.168.1.72/MallBackend/v1";
+    public static final String API_URL = "http://itdamu.kz/MallBackend/v1";
     // Google Project Number
     public static final String GOOGLE_PROJ_ID = "811945841836"; //mall-app-project
     public static final String MSG_KEY = "m";
