@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="kz.itdamu.mallapp.activity.MallMapActivity">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/rb_normall"
+            android:title="@string/str_rb_normal"
+            android:checked="true"/>
+        <item
+            android:id="@+id/rb_satellite"
+            android:title="@string/str_rb_satellite"/>
+        <item
+            android:id="@+id/rb_hybrid"
+            android:title="@string/str_rb_terrain"/>
+    </group>
+</menu><!-- From: file:/E:/Projects/MallApp/app/src/main/res/menu/menu_mall_map.xml -->

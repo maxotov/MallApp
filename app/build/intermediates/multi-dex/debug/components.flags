@@ -1,0 +1,86 @@
+-injars 'E:\Projects\MallApp\app\build\intermediates\multi-dex\debug\allclasses.jar'
+-outjars 'E:\Projects\MallApp\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'C:\Program Files (x86)\sdk\build-tools\23.0.1\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration 'E:\Projects\MallApp\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class null {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class kz.itdamu.mallapp.activity.MainActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.ShopActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.LoginActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.RegisterActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.ManageShopActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.AddShopActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.EditShopActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.ManageGoodsActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.MallMapActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.AdActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementContentProvider {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

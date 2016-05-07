@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="kz.itdamu.mallapp.activity.ShopActivity">
+    <item android:id="@+id/action_filter" android:icon="@drawable/ic_filter_variant" android:title="Filter"
+        android:orderInCategory="200" app:showAsAction="collapseActionView|ifRoom" />
+    <item
+        android:id="@+id/firm_search"
+        android:orderInCategory="200"
+        android:title="Search"
+        android:icon="@drawable/ic_magnify"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:actionViewClass="android.support.v7.widget.SearchView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        ></item>
+</menu>
+<!-- From: file:/E:/Projects/MallApp/app/src/main/res/menu/menu_shop.xml -->
