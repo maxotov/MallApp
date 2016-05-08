@@ -59,4 +59,9 @@
     <string name="str_rb_satellite">Спутник</string>
     <string name="str_rb_terrain">Гибридный</string>
 
+    <string name="goods_name">Название товара</string>
+    <string name="goods_price">Цена</string>
+    <string name="goods_description">Описание</string>
+    <string name="goods_add">Добавить</string>
+    <string name="goods_edit">Редактировать</string>
 </resources>

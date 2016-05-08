@@ -12,8 +12,8 @@ import kz.itdamu.mallapp.R;
  * Created by Aibol on 08.03.2016.
  */
 public class Helper {
-
     public static final String API_URL = "http://itdamu.kz/MallBackend/v1";
+    public static final String API_URL2 = "http://192.168.1.66/MallBackend/v1/goodsRest.php";
     // Google Project Number
     public static final String GOOGLE_PROJ_ID = "811945841836"; //mall-app-project
     public static final String MSG_KEY = "m";

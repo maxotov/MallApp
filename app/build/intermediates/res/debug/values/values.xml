@@ -1107,6 +1107,11 @@
     <string name="error_empty_mall">Пожалуйста, выберите центру</string>
     <string name="error_empty_phone">Главный телефон не может пустым</string>
     <string name="error_empty_title">Название не может пустым</string>
+    <string name="goods_add">Добавить</string>
+    <string name="goods_description">Описание</string>
+    <string name="goods_edit">Редактировать</string>
+    <string name="goods_name">Название товара</string>
+    <string name="goods_price">Цена</string>
     <string name="hello_world">Hello world!</string>
     <string name="hint_email">Ваш e-mail</string>
     <string name="hint_name">Имя</string>

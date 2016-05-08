@@ -142,6 +142,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kz.itdamu.mallapp.activity.MainActivity" />
         </activity>
+        <activity android:name="kz.itdamu.mallapp.activity.AddGoodsActivity" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

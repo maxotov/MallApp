@@ -386,15 +386,19 @@ ADDED from AndroidManifest.xml:116:9
 activity#kz.itdamu.mallapp.activity.MallMapActivity
 ADDED from AndroidManifest.xml:126:9
 	android:label
-		ADDED from AndroidManifest.xml:128:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:127:13
-	android:parentActivityName
-		ADDED from AndroidManifest.xml:130:13
-	android:name
-		ADDED from AndroidManifest.xml:126:19
-	android:launchMode
 		ADDED from AndroidManifest.xml:129:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:128:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:131:13
+	android:name
+		ADDED from AndroidManifest.xml:127:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:130:13
+activity#kz.itdamu.mallapp.activity.AddGoodsActivity
+ADDED from AndroidManifest.xml:136:9
+	android:name
+		ADDED from AndroidManifest.xml:136:19
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.mikepenz:materialdrawer:3.0.5:8:5

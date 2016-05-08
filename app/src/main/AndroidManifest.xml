@@ -123,7 +123,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kz.itdamu.mallapp.activity.ManageShopActivity" />
         </activity>
-        <activity android:name=".activity.MallMapActivity"
+        <activity
+            android:name=".activity.MallMapActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_mall_map"
             android:launchMode="singleTop"
@@ -132,6 +133,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kz.itdamu.mallapp.activity.MainActivity" />
         </activity>
+        <activity android:name=".activity.AddGoodsActivity"></activity>
     </application>
 
 </manifest>

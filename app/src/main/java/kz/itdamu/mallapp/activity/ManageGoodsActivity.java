@@ -37,7 +37,7 @@ public class ManageGoodsActivity extends BaseActivity {
     private CardView shopCardView;
 
     private String shopId;
-
+    private String shopName;
     private Shop shop;
 
     @Override
@@ -53,6 +53,7 @@ public class ManageGoodsActivity extends BaseActivity {
         Intent intent = getIntent();
         if(intent!=null){
             shopId = intent.getStringExtra("shopId");
+            shopName=intent.getStringExtra("shopName");
         }
         btnAddGoods = (FloatingActionButton)findViewById(R.id.fab);
         txtShopDescription = (TextView)findViewById(R.id.shop_description);
@@ -68,13 +69,26 @@ public class ManageGoodsActivity extends BaseActivity {
         txtControlDisplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(shopCardView.getVisibility()==View.GONE){
+                if (shopCardView.getVisibility() == View.GONE) {
                     shopCardView.setVisibility(View.VISIBLE);
                 } else {
                     shopCardView.setVisibility(View.GONE);
                 }
             }
         });
+
+        btnAddGoods.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), AddGoodsActivity.class);
+                intent.putExtra("shopId", shopId.toString());
+                intent.putExtra("shopName", shopName.toString());
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     @Override
