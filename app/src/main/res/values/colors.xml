@@ -49,4 +49,12 @@
 
     <color name="year">#999999</color>
     <color name="title">#222222</color>
+    <color name="bg_light_blue">#EBF5FF</color>
+
+    <!--Goods begin-->
+    <color name="grey">#ddd</color>
+    <color name="colorSecondText">#999</color>
+    <color name="collapsedColorPrimary">#ffffff</color>
+    <color name="colorPrimarytext">#212121</color>
+    <!--Goods end-->
 </resources>

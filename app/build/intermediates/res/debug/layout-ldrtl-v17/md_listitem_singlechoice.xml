@@ -36,4 +36,4 @@
         android:gravity="center_vertical"
         android:minHeight="@dimen/md_listitem_height" />
 
-</LinearLayout><!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/layout-ldrtl-v17/md_listitem_singlechoice.xml -->
+</LinearLayout><!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/layout-ldrtl-v17/md_listitem_singlechoice.xml -->

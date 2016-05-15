@@ -5,4 +5,4 @@
         android:id="@android:id/mask"
         android:drawable="@drawable/md_btn_shape" />
 
-</ripple><!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/drawable-v21/md_btn_selector_ripple.xml -->
+</ripple><!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/drawable-v21/md_btn_selector_ripple.xml -->

@@ -21,4 +21,4 @@
         android:textSize="@dimen/md_listitem_textsize"
         tools:text="Item" />
 
-</LinearLayout><!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/layout/md_listitem.xml -->
+</LinearLayout><!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/layout/md_listitem.xml -->

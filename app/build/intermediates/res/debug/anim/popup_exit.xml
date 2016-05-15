@@ -6,4 +6,4 @@
         android:toAlpha="0.0"
         android:interpolator="@anim/decelerate_cubic"
         android:duration="150" />
-</set><!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/anim/popup_exit.xml -->
+</set><!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/anim/popup_exit.xml -->

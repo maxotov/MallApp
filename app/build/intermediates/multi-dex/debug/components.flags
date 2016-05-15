@@ -1,17 +1,17 @@
--injars 'E:\Projects\MallApp\app\build\intermediates\multi-dex\debug\allclasses.jar'
--outjars 'E:\Projects\MallApp\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+-injars 'E:\android_urok\lessons\MallApp\app\build\intermediates\multi-dex\debug\allclasses.jar'
+-outjars 'E:\android_urok\lessons\MallApp\app\build\intermediates\multi-dex\debug\componentClasses.jar'
 
--libraryjars 'C:\Program Files (x86)\sdk\build-tools\23.0.1\lib\shrinkedAndroid.jar'
+-libraryjars 'E:\android_urok\build-tools\build-tools-23.0.1\lib\shrinkedAndroid.jar'
 
 -forceprocessing
 -dontoptimize
 -dontobfuscate
 -dontpreverify
 -dontwarn
--printconfiguration 'E:\Projects\MallApp\app\build\intermediates\multi-dex\debug\components.flags'
+-printconfiguration 'E:\android_urok\lessons\MallApp\app\build\intermediates\multi-dex\debug\components.flags'
 
 
--keep class null {
+-keep class android.support.multidex.MultiDexApplication {
     <init>();
     void attachBaseContext(android.content.Context);
 }
@@ -49,6 +49,22 @@
 }
 
 -keep class kz.itdamu.mallapp.activity.MallMapActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.AddGoodsActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.CustomPhotosActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.GoodsListActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.GoodsDetailsActivity {
     <init>();
 }
 

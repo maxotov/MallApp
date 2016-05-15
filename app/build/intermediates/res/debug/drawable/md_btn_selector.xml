@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/md_btn_selected" android:state_pressed="true" />
     <item android:drawable="@drawable/md_transparent" />
 
-</selector><!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/drawable/md_btn_selector.xml -->
+</selector><!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/drawable/md_btn_selector.xml -->

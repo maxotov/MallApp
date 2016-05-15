@@ -15,4 +15,4 @@
             android:id="@+id/rb_hybrid"
             android:title="@string/str_rb_terrain"/>
     </group>
-</menu><!-- From: file:/E:/Projects/MallApp/app/src/main/res/menu/menu_mall_map.xml -->
+</menu><!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/menu/menu_mall_map.xml -->

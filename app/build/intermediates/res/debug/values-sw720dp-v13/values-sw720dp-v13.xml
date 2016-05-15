@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values-sw720dp-v13/values-sw720dp-v13.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values-sw720dp-v13/values-sw720dp-v13.xml -->
     <eat-comment/>
     <bool name="md_is_tablet">true</bool>
 </resources>

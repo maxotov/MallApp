@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="color" name="md_background_color"/>
     <attr format="reference" name="md_btn_negative_selector"/>
@@ -55,7 +55,7 @@
         <enum name="end" value="2"/>
     </attr>
     <attr format="color" name="md_widget_color"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="mediaRouteButtonStyle"/>
     <attr format="reference" name="mediaRouteConnectingDrawable"/>
@@ -64,7 +64,7 @@
     <attr format="reference" name="mediaRoutePauseDrawable"/>
     <attr format="reference" name="mediaRoutePlayDrawable"/>
     <attr format="reference" name="mediaRouteSettingsDrawable"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
@@ -75,42 +75,43 @@
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
     <eat-comment/>
     <bool name="md_is_tablet">false</bool>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="Selected">#FD3E43</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="accent">@color/colorAccent</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="action_bar">#1f2649</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="bg_light_blue">#EBF5FF</color>
     <color name="bg_login">#26ae90</color>
     <color name="bg_main">#428bca</color>
     <color name="bg_register">#2e3237</color>
     <item name="black" type="color">#000000</item>
     <item name="blue" type="color">#FF33B5E5</item>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -118,31 +119,36 @@
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="btn_bg">#277bec</color>
     <color name="btn_login">#26ae90</color>
     <color name="btn_login_bg">#eceef1</color>
     <color name="btn_logut_bg">#ff6861</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="cardview_dark_background">#FF202020</color>
     <color name="cardview_light_background">#FFFAFAFA</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="collapsedColorPrimary">#ffffff</color>
     <item name="colorAccent" type="color">#FF4081</item>
     <item name="colorPrimary" type="color">#673AB7</item>
     <item name="colorPrimaryDark" type="color">#512DA8</item>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="colorPrimaryLight">#BBDEFB</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/values/base_colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="colorPrimarytext">#212121</color>
+    <color name="colorSecondText">#999</color>
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/values/base_colors.xml -->
     <eat-comment/>
     <color name="common_action_bar_splitter">#d2d2d2</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
@@ -161,7 +167,7 @@
     <color name="common_plus_signin_btn_text_light_disabled">#FFAAAAAA</color>
     <color name="common_plus_signin_btn_text_light_focused">#FF737373</color>
     <color name="common_plus_signin_btn_text_light_pressed">#DE000000</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="cyan_900">#006064</color>
     <item name="darkblue" type="color">#FF0099CC</item>
@@ -169,7 +175,7 @@
     <item name="darkorange" type="color">#FFFF8800</item>
     <item name="darkpurple" type="color">#FF9933CC</item>
     <item name="darkred" type="color">#FFCC0000</item>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
@@ -180,17 +186,17 @@
     <color name="design_fab_stroke_top_outer_color">#2EFFFFFF</color>
     <color name="design_snackbar_background_color">#323232</color>
     <color name="design_textinput_error_color">#FFDD2C00</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="divider">#1F000000</color>
     <color name="drawer_background">#F9F9F9</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/info.hoang8f/fbutton/1.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/info.hoang8f/fbutton/1.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="fbutton_color_alizarin">#e74c3c</color>
     <color name="fbutton_color_amethyst">#9b59b6</color>
@@ -215,25 +221,26 @@
     <color name="fbutton_color_wisteria">#8e44ad</color>
     <color name="fbutton_default_color">#3eadeb</color>
     <color name="fbutton_default_shadow_color">#ff3493c8</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="green" type="color">#FF99CC00</item>
+    <color name="grey">#ddd</color>
     <color name="grey_700">#616161</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="hint_text">#42000000</color>
     <color name="icons">#FFF</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="indigo" type="color">#304FFE</item>
     <color name="input_login">#222222</color>
@@ -242,17 +249,17 @@
     <color name="input_register_bg">#3b4148</color>
     <color name="input_register_hint">#5e6266</color>
     <color name="lbl_name">#333333</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.3.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.3.0/res/values/values.xml -->
     <eat-comment/>
     <color name="material_blue_500">#5677fc</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="material_drawer_accent">@color/accent</color>
     <color name="material_drawer_background">@color/drawer_background</color>
@@ -278,7 +285,7 @@
     <color name="material_drawer_secondary_text">@color/secondary_text</color>
     <color name="material_drawer_selected">#E8E8E8</color>
     <color name="material_drawer_selected_text">@color/material_drawer_primary</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="material_grey_100">#fff5f5f5</color>
     <color name="material_grey_300">#ffe0e0e0</color>
@@ -287,7 +294,7 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="md_amber_100">#ffecb3</color>
     <color name="md_amber_200">#ffe082</color>
@@ -338,11 +345,11 @@
     <color name="md_brown_700">#5d4037</color>
     <color name="md_brown_800">#4e342e</color>
     <color name="md_brown_900">#3e2723</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="md_btn_selected">#33969696</color>
     <color name="md_btn_selected_dark">#40CBCBCB</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="md_cyan_100">#b2ebf2</color>
     <color name="md_cyan_200">#80deea</color>
@@ -386,12 +393,12 @@
     <color name="md_deep_purple_A200">#7c4dff</color>
     <color name="md_deep_purple_A400">#651fff</color>
     <color name="md_deep_purple_A700">#6200ea</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="md_divider_black">#10000000</color>
     <color name="md_divider_white">#10FFFFFF</color>
     <color name="md_edittext_error">#DD2C00</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="md_green_100">#a3e9a4</color>
     <color name="md_green_200">#72d572</color>
@@ -473,11 +480,11 @@
     <color name="md_lime_A200">#eeff41</color>
     <color name="md_lime_A400">#c6ff00</color>
     <color name="md_lime_A700">#aeea00</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="md_material_blue_600">#1E88E5</color>
     <color name="md_material_blue_800">#1565C0</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="md_orange_100">#ffe0b2</color>
     <color name="md_orange_200">#ffcc80</color>
@@ -564,49 +571,49 @@
     <color name="md_yellow_A200">#ffff00</color>
     <color name="md_yellow_A400">#ffea00</color>
     <color name="md_yellow_A700">#ffd600</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="orange" type="color">#FFFFBB33</item>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="primary">@color/colorPrimary</color>
     <color name="primary_dark">@color/colorPrimaryDark</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_light">@color/colorPrimaryLight</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_material_dark">@color/material_grey_900</color>
     <color name="primary_material_light">@color/material_grey_100</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_text">#DE000000</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_text_default_material_dark">#ffffffff</color>
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="purple" type="color">#FFAA66CC</item>
     <item name="red" type="color">#FFFF4444</item>
     <color name="ripple">#78C9FF</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="seawave" type="color">#01BF9B</item>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="secondary_text">#8A000000</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
@@ -616,7 +623,7 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="theme_primary">#2196F3</color>
     <color name="theme_primary_dark">#1976D2</color>
@@ -626,7 +633,7 @@
     <color name="viewfinder_border">#ffafed44</color>
     <color name="viewfinder_laser">#ffcc0000</color>
     <color name="viewfinder_mask">#60000000</color>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.3.0/res/values/wallet_colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.3.0/res/values/wallet_colors.xml -->
     <eat-comment/>
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
@@ -641,7 +648,7 @@
     <color name="wallet_hint_foreground_holo_light">#808080</color>
     <color name="wallet_holo_blue_light">#ff33b5e5</color>
     <color name="wallet_link_text_light">#0000ee</color>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="white" type="color">#FFFFFF</item>
     <color name="window_background">#FFF5F5F5</color>
@@ -670,6 +677,7 @@
     <declare-styleable name="FButton"><attr format="boolean" name="shadowEnabled"/><attr format="color" name="buttonColor"/><attr format="color" name="shadowColor"/><attr format="dimension" name="shadowHeight"/><attr format="dimension" name="cornerRadius"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/><attr format="color" name="fab_colorPressed"/><attr format="color" name="fab_colorNormal"/><attr format="color" name="fab_colorRipple"/><attr format="color" name="fab_colorDisabled"/><attr format="boolean" name="fab_shadow"/><attr format="enum" name="fab_type"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr></declare-styleable>
     <declare-styleable name="ForegroundLinearLayout"><attr name="android:foreground"/><attr name="android:foregroundGravity"/><attr format="boolean" name="foregroundInsidePadding"/></declare-styleable>
+    <declare-styleable name="GenericDraweeView"><attr format="integer" name="fadeDuration"/><attr format="float" name="viewAspectRatio"/><attr format="reference" name="placeholderImage"/><attr name="placeholderImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="retryImage"/><attr name="retryImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="failureImage"/><attr name="failureImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="progressBarImage"/><attr name="progressBarImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="integer" name="progressBarAutoRotateInterval"/><attr name="actualImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="backgroundImage"/><attr format="reference" name="overlayImage"/><attr format="reference" name="pressedStateOverlayImage"/><attr format="boolean" name="roundAsCircle"/><attr format="dimension" name="roundedCornerRadius"/><attr format="boolean" name="roundTopLeft"/><attr format="boolean" name="roundTopRight"/><attr format="boolean" name="roundBottomRight"/><attr format="boolean" name="roundBottomLeft"/><attr format="color" name="roundWithOverlayColor"/><attr format="dimension" name="roundingBorderWidth"/><attr format="color" name="roundingBorderColor"/><attr format="dimension" name="roundingBorderPadding"/></declare-styleable>
     <declare-styleable name="IconicsImageView"><attr format="string" name="iiv_icon"/><attr format="color|reference" name="iiv_color"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
@@ -705,7 +713,7 @@
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
     <declare-styleable name="WalletFragmentOptions"><attr format="enum" name="appTheme"><enum name="holo_dark" value="0"/><enum name="holo_light" value="1"/></attr><attr format="enum" name="environment"><enum name="production" value="1"/><enum name="test" value="3"/><enum name="sandbox" value="0"/><enum name="strict_sandbox" value="2"/></attr><attr format="reference" name="fragmentStyle"/><attr format="enum" name="fragmentMode"><enum name="buyButton" value="1"/><enum name="selectionDetails" value="2"/></attr></declare-styleable>
     <declare-styleable name="WalletFragmentStyle"><attr format="dimension" name="buyButtonHeight"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="dimension" name="buyButtonWidth"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="enum" name="buyButtonText"><enum name="buy_with" value="5"/><enum name="logo_only" value="6"/><enum name="donate_with" value="7"/><enum name="buy_with_google" value="1"/><enum name="buy_now" value="2"/><enum name="book_now" value="3"/><enum name="donate_with_google" value="4"/></attr><attr format="enum" name="buyButtonAppearance"><enum name="google_wallet_classic" value="1"/><enum name="google_wallet_grayscale" value="2"/><enum name="google_wallet_monochrome" value="3"/><enum name="android_pay_dark" value="4"/><enum name="android_pay_light" value="5"/><enum name="android_pay_light_with_border" value="6"/><enum name="classic" value="1"/><enum name="grayscale" value="2"/><enum name="monochrome" value="3"/></attr><attr format="reference" name="maskedWalletDetailsTextAppearance"/><attr format="reference" name="maskedWalletDetailsHeaderTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsBackground"/><attr format="reference" name="maskedWalletDetailsButtonTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsButtonBackground"/><attr format="color" name="maskedWalletDetailsLogoTextColor"/><attr format="enum" name="maskedWalletDetailsLogoImageType"><enum name="google_wallet_classic" value="1"/><enum name="google_wallet_monochrome" value="2"/><enum name="android_pay" value="3"/><enum name="classic" value="1"/><enum name="monochrome" value="2"/></attr></declare-styleable>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -774,19 +782,19 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="circular_progress_border">4dp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_fab_border_width">0.5dp</dimen>
@@ -816,18 +824,18 @@
     <dimen name="design_tab_scrollable_min_width">72dp</dimen>
     <dimen name="design_tab_text_size">14sp</dimen>
     <dimen name="design_tab_text_size_2line">12sp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.3.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.3.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="fab_elevation_lollipop">8dp</dimen>
     <dimen name="fab_scroll_threshold">4dp</dimen>
     <dimen name="fab_shadow_size">12dp</dimen>
     <dimen name="fab_size_mini">40dp</dimen>
     <dimen name="fab_size_normal">56dp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/info.hoang8f/fbutton/1.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/info.hoang8f/fbutton/1.0.5/res/values/values.xml -->
     <eat-comment/>
     <dimen name="fbutton_default_conner_radius">8dp</dimen>
     <dimen name="fbutton_default_padding_bottom">5dp</dimen>
@@ -835,15 +843,15 @@
     <dimen name="fbutton_default_padding_right">10dp</dimen>
     <dimen name="fbutton_default_padding_top">5dp</dimen>
     <dimen name="fbutton_default_shadow_height">4dp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <dimen name="material_drawer_account_header_compact">56dp</dimen>
     <dimen name="material_drawer_account_header_dropdown">22dp</dimen>
@@ -880,7 +888,7 @@
     <dimen name="material_drawer_padding">8dp</dimen>
     <dimen name="material_drawer_vertical_padding">16dp</dimen>
     <dimen name="material_drawer_width">320dp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="md_action_corner_radius">2dp</dimen>
     <dimen name="md_bg_corner_radius">2dp</dimen>
@@ -914,74 +922,74 @@
     <dimen name="md_title_frame_margin_bottom">12dp</dimen>
     <dimen name="md_title_frame_margin_bottom_less">6dp</dimen>
     <dimen name="md_title_textsize">20sp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="mr_media_route_controller_art_max_height">320dp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <dimen name="tool_bar_top_padding">0dp</dimen>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <item name="animation" type="id"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.3.0/res/values/cast_ids.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.3.0/res/values/cast_ids.xml -->
     <eat-comment/>
     <item name="cast_notification_id" type="id"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <item name="profile_header" type="id"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <item name="sticky_footer" type="id"/>
     <item name="sticky_header" type="id"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="up" type="id"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="view_offset_helper" type="id"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <integer name="design_snackbar_text_max_lines">2</integer>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values/version.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values/version.xml -->
     <eat-comment/>
     <integer name="google_play_services_version">8298000</integer>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <integer name="status_bar_notification_info_maxnum">999</integer>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="GPSAlertDialogMessage">GPS не включен. Вы хотите перейти к меню настройки?</string>
     <string name="GPSAlertDialogTitle">GPS настройка</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -1002,35 +1010,35 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.3.0/res/values/admob_strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.3.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="accept">Accept</string>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">MallApp</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values/auth_strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values/auth_strings.xml -->
     <eat-comment/>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="btn_link_to_register">Зарегистрироваться</string>
     <string name="btn_login">ВОЙТИ</string>
     <string name="btn_register">ЗАРЕГИСТРИРОВАТЬСЯ</string>
     <string name="cancel">Отмена</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.3.0/res/values/cast_strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.3.0/res/values/cast_strings.xml -->
     <eat-comment/>
     <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_connecting_message">Connecting to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_disconnect">Disconnect</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values/common_strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
     <string name="common_android_wear_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update the Android Wear app.</string>
@@ -1062,31 +1070,31 @@
     <string name="common_google_play_services_updating_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are currently updating.</string>
     <string name="common_google_play_services_updating_title">Google Play services are updating</string>
     <string name="common_open_on_phone">Open on phone</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/values/base_strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/values/base_strings.xml -->
     <eat-comment/>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.3.0/res/values/admob_strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.3.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
     <string name="create_calendar_title">Create calendar event</string>
     <string name="decline">Decline</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/iconics/1.0.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/iconics/1.0.1/res/values/values.xml -->
     <eat-comment/>
     <string name="define_AndroidIconics">year;owner</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.3.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.3.0/res/values/values.xml -->
     <eat-comment/>
     <string name="define_FloatingActionButton"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <string name="define_materialdrawer">year;owner</string>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="display_on_map">на карте</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <string name="drawer_close">Close</string>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="drawer_item_about">О приложении</string>
     <string name="drawer_item_feedback">Обратная связь</string>
@@ -1096,10 +1104,10 @@
     <string name="drawer_item_main">Главная</string>
     <string name="drawer_item_my_shops">Мои магазины</string>
     <string name="drawer_item_register">Регистрация</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <string name="drawer_open">Open</string>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="error_count_selected_category">Не можете выбрать больше 3 категории</string>
     <string name="error_empty_category">Пожалуйста, выберите категорию</string>
@@ -1108,6 +1116,8 @@
     <string name="error_empty_phone">Главный телефон не может пустым</string>
     <string name="error_empty_title">Название не может пустым</string>
     <string name="goods_add">Добавить</string>
+    <string name="goods_add_photos">Выбрать из галереи</string>
+    <string name="goods_add_photos_ok">Ок</string>
     <string name="goods_description">Описание</string>
     <string name="goods_edit">Редактировать</string>
     <string name="goods_name">Название товара</string>
@@ -1117,7 +1127,7 @@
     <string name="hint_name">Имя</string>
     <string name="hint_password">Пароль</string>
     <string name="hint_phone">Телефон</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/iconics/1.0.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/iconics/1.0.1/res/values/values.xml -->
     <eat-comment/>
     <string name="library_AndroidIconics_author">Mike Penz</string>
     <string name="library_AndroidIconics_authorWebsite">http://mikepenz.com/</string>
@@ -1136,7 +1146,7 @@
     <string name="library_AndroidIconics_owner">Mike Penz</string>
     <string name="library_AndroidIconics_repositoryLink">https://github.com/mikepenz/Android-Iconics</string>
     <string name="library_AndroidIconics_year">2014</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.3.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.3.0/res/values/values.xml -->
     <eat-comment/>
     <string name="library_FloatingActionButton_author">Oleksandr Melnykov</string>
     <string name="library_FloatingActionButton_authorWebsite">https://github.com/makovkastar/FloatingActionButton</string>
@@ -1147,7 +1157,7 @@
     <string name="library_FloatingActionButton_libraryWebsite">https://github.com/makovkastar/FloatingActionButton</string>
     <string name="library_FloatingActionButton_licenseId">mit</string>
     <string name="library_FloatingActionButton_repositoryLink">https://github.com/makovkastar/FloatingActionButton</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <string name="library_materialdrawer_author">Mike Penz</string>
     <string name="library_materialdrawer_authorWebsite">http://mikepenz.com/</string>
@@ -1164,10 +1174,10 @@
     <string name="library_materialdrawer_owner">Mike Penz</string>
     <string name="library_materialdrawer_repositoryLink">https://github.com/mikepenz/MaterialDrawer</string>
     <string name="library_materialdrawer_year">2015</string>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="manage_shop_detail_display">показать/скрыть информацию</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="mr_media_route_button_content_description">Cast</string>
     <string name="mr_media_route_chooser_searching">Searching for devices\u2026</string>
@@ -1179,7 +1189,7 @@
     <string name="mr_media_route_controller_stop">Stop casting</string>
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="put_route">Проложить маршрут</string>
     <string name="select">Выбрать</string>
@@ -1197,14 +1207,14 @@
     <string name="shop_phone">Телефон</string>
     <string name="shop_site">Сайт</string>
     <string name="shop_title">Название магазина</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.3.0/res/values/admob_strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.3.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="str_rb_normal">Обычный</string>
     <string name="str_rb_satellite">Спутник</string>
@@ -1217,10 +1227,10 @@
     <string name="title_activity_manage_shop">ManageShopActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_shop">ShopActivity</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.3.0/res/values/wallet_strings.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.3.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -1455,7 +1465,7 @@
         <item name="windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="Theme.AppCompat.Light"/>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/theme_primary</item>
@@ -1464,7 +1474,7 @@
 
         <item name="android:windowBackground">@color/window_background</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.ThemeOverlay.AppCompat" parent="Platform.ThemeOverlay.AppCompat"/>
     <style name="Base.ThemeOverlay.AppCompat.ActionBar">
@@ -2172,7 +2182,7 @@
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
         <item name="tabMaxWidth">@dimen/design_tab_max_width</item>
@@ -2184,7 +2194,7 @@
         <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
         <item name="tabSelectedTextColor">?android:textColorPrimary</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="CardView">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
@@ -2200,7 +2210,7 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.1.0/res/values/values.xml -->
     <eat-comment/>
     <style name="MD_ActionButton">
         <item name="android:layout_width">wrap_content</item>
@@ -2254,7 +2264,7 @@
         <item name="android:windowEnterAnimation">@anim/popup_enter</item>
         <item name="android:windowExitAnimation">@anim/popup_exit</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <style name="MaterialDrawer.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
         <item name="spinBars">false</item>
@@ -2370,7 +2380,16 @@
     </style>
     <style name="MaterialDrawerTheme.TranslucentStatus" parent="MaterialDrawerTheme">
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="MyGoodsToolbarStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+    </style>
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -2572,7 +2591,7 @@
     </style>
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="Base.TextAppearance.AppCompat.Widget.Switch"/>
     <style name="TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.Design.CollapsingToolbar.Expanded" parent="TextAppearance.AppCompat.Display1">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
@@ -2596,7 +2615,7 @@
         <item name="android:textColor">?android:textColorSecondary</item>
         <item name="textAllCaps">true</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.StatusBar.EventContent" parent=""/>
     <style name="TextAppearance.StatusBar.EventContent.Info" parent=""/>
@@ -2631,11 +2650,11 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo">
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.3.0/res/values/admob_iap_style.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.3.0/res/values/admob_iap_style.xml -->
     <eat-comment/>
     <style name="Theme.IAPTheme" parent="android:Theme">
     <item name="android:windowIsTranslucent">true</item>
@@ -2645,7 +2664,7 @@
     <item name="android:windowIsFloating">true</item>
     <item name="android:backgroundDimEnabled">false</item>
   </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Theme.MediaRouter" parent="">
         <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.MediaRouteButton</item>
@@ -2667,14 +2686,14 @@
         <item name="mediaRoutePlayDrawable">@drawable/mr_ic_play_light</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_ic_pause_light</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="ToolBarStyle" parent="">
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
@@ -2683,7 +2702,7 @@
         <item name="android:textColorSecondary">@android:color/white</item>
         <item name="actionMenuTextColor">@android:color/white</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.3.0/res/values/wallet_styles.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.3.0/res/values/wallet_styles.xml -->
     <eat-comment/>
     <style name="WalletFragmentDefaultButtonTextAppearance">
         <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
@@ -2717,7 +2736,7 @@
         <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
         <item name="maskedWalletDetailsLogoImageType">android_pay</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
@@ -2812,7 +2831,7 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="Widget.CardContent" parent="android:Widget">
         <item name="android:paddingLeft">16dp</item>
@@ -2821,7 +2840,7 @@
         <item name="android:paddingBottom">24dp</item>
         <item name="android:orientation">vertical</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.Design.AppBarLayout" parent="android:Widget">
         <item name="elevation">@dimen/design_appbar_elevation</item>
@@ -2872,7 +2891,7 @@
         <item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>
         <item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.4/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.4/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.MaterialProgressBar.ProgressBar" parent="android:Widget.ProgressBar">
         <item name="android:indeterminateDrawable">@null</item>
@@ -2924,7 +2943,7 @@
         <item name="android:minHeight">14dp</item>
         <item name="android:maxHeight">14dp</item>
     </style>
-    <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.MediaRouter.Light.MediaRouteButton" parent="Widget.AppCompat.Light.ActionButton">
         <item name="android:minWidth">56dp</item>
@@ -2941,5 +2960,15 @@
         <item name="android:focusable">true</item>
         <item name="android:contentDescription">@string/mr_media_route_button_content_description</item>
         <item name="externalRouteEnabledDrawable">@drawable/mr_ic_media_route_mono_dark</item>
+    </style>
+    <!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="btn">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="title_bar">
+        <item name="android:textColor">#d9f3ff</item>
+        <item name="android:textSize">22sp</item>
     </style>
 </resources>

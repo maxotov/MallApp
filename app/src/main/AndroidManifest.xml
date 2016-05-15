@@ -27,6 +27,7 @@
         android:required="true" />
 
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -133,7 +134,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kz.itdamu.mallapp.activity.MainActivity" />
         </activity>
-        <activity android:name=".activity.AddGoodsActivity"></activity>
+        <activity android:name=".activity.AddGoodsActivity" />
+        <activity android:name=".activity.CustomPhotosActivity">
+            <intent-filter>
+                <action android:name="mallapp.ACTION_PICK" />
+                <action android:name="mallapp.ACTION_MULTIPLE_PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.GoodsListActivity" />
+        <activity android:name=".activity.GoodsDetailsActivity"/>
     </application>
 
 </manifest>

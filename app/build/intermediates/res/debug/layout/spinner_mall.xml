@@ -4,4 +4,4 @@
     android:layout_height="wrap_content"
     android:padding="10dp"
     android:textSize="20sp"
-    android:text="Text Here" /><!-- From: file:/E:/Projects/MallApp/app/src/main/res/layout/spinner_mall.xml -->
+    android:text="Text Here" /><!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/layout/spinner_mall.xml -->

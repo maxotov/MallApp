@@ -10,4 +10,4 @@
     android:minHeight="?attr/actionBarSize"
     style="@style/ToolBarStyle" >
 
-</android.support.v7.widget.Toolbar><!-- From: file:/E:/Projects/MallApp/app/src/main/res/layout/toolbar.xml -->
+</android.support.v7.widget.Toolbar><!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/layout/toolbar.xml -->

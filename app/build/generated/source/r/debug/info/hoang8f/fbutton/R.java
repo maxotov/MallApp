@@ -15,29 +15,29 @@ public final class R {
 		public static final int shadowHeight = 0x7f01007f;
 	}
 	public static final class color {
-		public static final int fbutton_color_alizarin = 0x7f0c004c;
-		public static final int fbutton_color_amethyst = 0x7f0c004d;
-		public static final int fbutton_color_asbestos = 0x7f0c004e;
-		public static final int fbutton_color_belize_hole = 0x7f0c004f;
-		public static final int fbutton_color_carrot = 0x7f0c0050;
-		public static final int fbutton_color_clouds = 0x7f0c0051;
-		public static final int fbutton_color_concrete = 0x7f0c0052;
-		public static final int fbutton_color_emerald = 0x7f0c0053;
-		public static final int fbutton_color_green_sea = 0x7f0c0054;
-		public static final int fbutton_color_midnight_blue = 0x7f0c0055;
-		public static final int fbutton_color_nephritis = 0x7f0c0056;
-		public static final int fbutton_color_orange = 0x7f0c0057;
-		public static final int fbutton_color_peter_river = 0x7f0c0058;
-		public static final int fbutton_color_pomegranate = 0x7f0c0059;
-		public static final int fbutton_color_pumpkin = 0x7f0c005a;
-		public static final int fbutton_color_silver = 0x7f0c005b;
-		public static final int fbutton_color_sun_flower = 0x7f0c005c;
-		public static final int fbutton_color_transparent = 0x7f0c005d;
-		public static final int fbutton_color_turquoise = 0x7f0c005e;
-		public static final int fbutton_color_wet_asphalt = 0x7f0c005f;
-		public static final int fbutton_color_wisteria = 0x7f0c0060;
-		public static final int fbutton_default_color = 0x7f0c0061;
-		public static final int fbutton_default_shadow_color = 0x7f0c0062;
+		public static final int fbutton_color_alizarin = 0x7f0c0050;
+		public static final int fbutton_color_amethyst = 0x7f0c0051;
+		public static final int fbutton_color_asbestos = 0x7f0c0052;
+		public static final int fbutton_color_belize_hole = 0x7f0c0053;
+		public static final int fbutton_color_carrot = 0x7f0c0054;
+		public static final int fbutton_color_clouds = 0x7f0c0055;
+		public static final int fbutton_color_concrete = 0x7f0c0056;
+		public static final int fbutton_color_emerald = 0x7f0c0057;
+		public static final int fbutton_color_green_sea = 0x7f0c0058;
+		public static final int fbutton_color_midnight_blue = 0x7f0c0059;
+		public static final int fbutton_color_nephritis = 0x7f0c005a;
+		public static final int fbutton_color_orange = 0x7f0c005b;
+		public static final int fbutton_color_peter_river = 0x7f0c005c;
+		public static final int fbutton_color_pomegranate = 0x7f0c005d;
+		public static final int fbutton_color_pumpkin = 0x7f0c005e;
+		public static final int fbutton_color_silver = 0x7f0c005f;
+		public static final int fbutton_color_sun_flower = 0x7f0c0060;
+		public static final int fbutton_color_transparent = 0x7f0c0061;
+		public static final int fbutton_color_turquoise = 0x7f0c0062;
+		public static final int fbutton_color_wet_asphalt = 0x7f0c0063;
+		public static final int fbutton_color_wisteria = 0x7f0c0064;
+		public static final int fbutton_default_color = 0x7f0c0065;
+		public static final int fbutton_default_shadow_color = 0x7f0c0066;
 	}
 	public static final class dimen {
 		public static final int fbutton_default_conner_radius = 0x7f090070;

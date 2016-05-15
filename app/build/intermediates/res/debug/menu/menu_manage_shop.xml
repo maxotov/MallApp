@@ -5,4 +5,4 @@
     <item android:id="@+id/action_add_shop" android:icon="@drawable/ic_plus" android:title="AddShop"
         android:orderInCategory="200" app:showAsAction="collapseActionView|ifRoom" />
 </menu>
-<!-- From: file:/E:/Projects/MallApp/app/src/main/res/menu/menu_manage_shop.xml -->
+<!-- From: file:/E:/android_urok/lessons/MallApp/app/src/main/res/menu/menu_manage_shop.xml -->

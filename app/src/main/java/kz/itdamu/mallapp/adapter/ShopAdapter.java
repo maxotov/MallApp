@@ -1,6 +1,7 @@
 package kz.itdamu.mallapp.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -16,6 +17,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import kz.itdamu.mallapp.R;
+import kz.itdamu.mallapp.activity.GoodsListActivity;
 import kz.itdamu.mallapp.entity.Shop;
 
 /**
@@ -133,11 +135,12 @@ public class ShopAdapter extends RecyclerView.Adapter {
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     Log.d("Mall id = ", shopId.getText().toString());
-                    /**Intent intent = new Intent(activity, MainActivity.class);
-                     intent.putExtra("id", mallId.getText().toString());
-                     intent.putExtra("title", name.getText().toString());
-                     activity.startActivity(intent);*/
+                    Intent intent = new Intent(activity, GoodsListActivity.class);
+                    intent.putExtra("shopId", shopId.getText().toString());
+                    intent.putExtra("shopName", name.getText().toString());
+                    activity.startActivity(intent);
                 }
             });
         }

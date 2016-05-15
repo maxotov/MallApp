@@ -126,4 +126,4 @@
             android:layout_marginRight="@dimen/material_drawer_vertical_padding"/>
 
     </RelativeLayout>
-</FrameLayout><!-- From: file:/Users/mikepenz/GoogleDrive/Development/AndroidLibraries/MaterialDrawer/library/src/main/res/layout/material_drawer_header.xml --><!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/layout/material_drawer_header.xml -->
+</FrameLayout><!-- From: file:/Users/mikepenz/GoogleDrive/Development/AndroidLibraries/MaterialDrawer/library/src/main/res/layout/material_drawer_header.xml --><!-- From: file:/E:/android_urok/lessons/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/layout/material_drawer_header.xml -->
