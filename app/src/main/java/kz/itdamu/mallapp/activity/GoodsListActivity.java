@@ -51,6 +51,13 @@ public class GoodsListActivity extends BaseActivity {
             setSupportActionBar(toolbar);
             initDrawer(toolbar);
             makeNavigationBackButton();
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onBackPressed();
+                }
+            });
         }
 
         mRecyclerView.setHasFixedSize(true);

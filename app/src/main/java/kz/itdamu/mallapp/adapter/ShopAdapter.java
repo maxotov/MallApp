@@ -163,6 +163,7 @@ public class ShopAdapter extends RecyclerView.Adapter {
                     });
                     Intent intent = new Intent(activity, GoodsListActivity.class);
                     intent.putExtra("shopId", shop_id);
+                    Log.d("Mall id = ", shopId.getText().toString());
                     intent.putExtra("shopName", name.getText().toString());
                     activity.startActivity(intent);
                 }
