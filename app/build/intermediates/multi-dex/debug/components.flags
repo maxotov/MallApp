@@ -52,6 +52,34 @@
     <init>();
 }
 
+-keep class kz.itdamu.mallapp.activity.AddGoodsActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.gcm.GcmBroadcastReceiver {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.gcm.GCMNotificationIntentService {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.GreetingActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.CustomPhotosActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.GoodsListActivity {
+    <init>();
+}
+
+-keep class kz.itdamu.mallapp.activity.GoodsDetailsActivity {
+    <init>();
+}
+
 -keep class com.google.android.gms.ads.AdActivity {
     <init>();
 }

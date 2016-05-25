@@ -1,9 +1,11 @@
 package kz.itdamu.mallapp.entity;
 
+import java.io.Serializable;
+
 /**
  * Created by Aibol on 05.04.2016.
  */
-public class Photo {
+public class Photo  implements Serializable {
     private int id;
     private String name;
     private String description;

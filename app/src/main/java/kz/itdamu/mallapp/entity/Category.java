@@ -3,6 +3,7 @@ package kz.itdamu.mallapp.entity;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +12,8 @@ import kz.itdamu.mallapp.custom.Listable;
 /**
  * Created by Aibol on 27.03.2016.
  */
-public class Category implements Listable, Parcelable{
+public class Category implements Listable, Parcelable, Serializable{
+    private static final long serialVersionUID = 2070450081971040619L;
     private int id;
     private String title;
     private String c_date;

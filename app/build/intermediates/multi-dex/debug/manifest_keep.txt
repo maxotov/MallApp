@@ -11,6 +11,13 @@
 -keep class kz.itdamu.mallapp.activity.EditShopActivity { <init>(); }
 -keep class kz.itdamu.mallapp.activity.ManageGoodsActivity { <init>(); }
 -keep class kz.itdamu.mallapp.activity.MallMapActivity { <init>(); }
+-keep class kz.itdamu.mallapp.activity.AddGoodsActivity { <init>(); }
+-keep class kz.itdamu.mallapp.gcm.GcmBroadcastReceiver { <init>(); }
+-keep class kz.itdamu.mallapp.gcm.GCMNotificationIntentService { <init>(); }
+-keep class kz.itdamu.mallapp.activity.GreetingActivity { <init>(); }
+-keep class kz.itdamu.mallapp.activity.CustomPhotosActivity { <init>(); }
+-keep class kz.itdamu.mallapp.activity.GoodsListActivity { <init>(); }
+-keep class kz.itdamu.mallapp.activity.GoodsDetailsActivity { <init>(); }
 -keep class com.google.android.gms.ads.AdActivity { <init>(); }
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(); }
 -keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }

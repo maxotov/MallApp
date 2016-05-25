@@ -1,6 +1,7 @@
 package kz.itdamu.mallapp.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -16,7 +17,14 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import kz.itdamu.mallapp.R;
+import kz.itdamu.mallapp.entity.Message;
+import kz.itdamu.mallapp.activity.GoodsListActivity;
 import kz.itdamu.mallapp.entity.Shop;
+import kz.itdamu.mallapp.helper.Helper;
+import kz.itdamu.mallapp.rest.ServiceGenerator;
+import kz.itdamu.mallapp.rest.ShopApi;
+import retrofit.Callback;
+import retrofit.RetrofitError;
 
 /**
  * Created by Aibol on 09.03.2016.
@@ -96,6 +104,7 @@ public class ShopAdapter extends RecyclerView.Adapter {
 
             ((ShopViewHolder) holder).name.setText(shop.getTitle());
             ((ShopViewHolder) holder).shopId.setText(String.valueOf(shop.getId()));
+            ((ShopViewHolder) holder).shopView.setText(String.valueOf(shop.getView()));
             if(shop.getCategories().get(0).getParent()==0){
                 Picasso.with(activity).load(IMG_URL+shop.getCategories().get(0).getId()+".png").into(((ShopViewHolder) holder).shopIcon);
             } else {
@@ -123,21 +132,39 @@ public class ShopAdapter extends RecyclerView.Adapter {
         public TextView name;
         public TextView shopId;
         public ImageView shopIcon;
+        public TextView shopView;
 
         public ShopViewHolder(View v) {
             super(v);
             name = (TextView) v.findViewById(R.id.shop_name);
             shopId = (TextView) v.findViewById(R.id.shop_id);
             shopIcon = (ImageView)v.findViewById(R.id.shop_icon);
+            shopView = (TextView) v.findViewById(R.id.shop_view);
 
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.d("Mall id = ", shopId.getText().toString());
-                    /**Intent intent = new Intent(activity, MainActivity.class);
-                     intent.putExtra("id", mallId.getText().toString());
-                     intent.putExtra("title", name.getText().toString());
-                     activity.startActivity(intent);*/
+                    String shop_id = shopId.getText().toString();
+                    int old_view = Integer.parseInt(shopView.getText().toString());
+                    Log.d("Shop id = ", shop_id);
+                    Log.d("Shop Old View = ", old_view+"");
+                    int new_view = old_view + 1;
+                    ShopApi api = ServiceGenerator.createService(ShopApi.class, Helper.API_URL);
+                    api.updateView(shop_id, new_view+"", new Callback<Message>() {
+                        @Override
+                        public void success(Message message, retrofit.client.Response response) {
+                            Log.e("message", message.getMessage());
+                        }
+
+                        @Override
+                        public void failure(RetrofitError error) {
+                            error.printStackTrace();
+                        }
+                    });
+                    Intent intent = new Intent(activity, GoodsListActivity.class);
+                    intent.putExtra("shopId", shop_id);
+                    intent.putExtra("shopName", name.getText().toString());
+                    activity.startActivity(intent);
                 }
             });
         }

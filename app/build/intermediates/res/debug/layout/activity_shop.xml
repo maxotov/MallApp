@@ -1,31 +1,35 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    tools:context=".activity.ShopActivity">
+    android:layout_height="fill_parent">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:context=".activity.ShopActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/listShop"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
-        android:layout_weight="1"
-        android:scrollbars="vertical" />
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listShop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+    </LinearLayout>
 
     <ProgressBar
-        style="?android:attr/progressBarStyle"
-        android:layout_centerInParent="true"
         android:id="@+id/progressbar_loading"
-        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:gravity="center"
-        android:layout_gravity="center_vertical|center_horizontal" />
-
-</LinearLayout><!-- From: file:/E:/Projects/MallApp/app/src/main/res/layout/activity_shop.xml -->
+        android:visibility="gone" />
+</RelativeLayout><!-- From: file:/E:/Projects/MallApp/app/src/main/res/layout/activity_shop.xml -->

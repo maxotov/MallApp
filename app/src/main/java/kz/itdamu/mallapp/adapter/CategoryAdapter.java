@@ -40,22 +40,29 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
         return (long)( groupPosition*1024+childPosition );  // Max 1024 children per group
     }
 
+    private static class ViewHolder {
+        private TextView title;
+        private CheckBox cb;
+    }
+
     public View getChildView(final int groupPosition, final int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-        View v = null;
-        if( convertView != null )
-            v = convertView;
-        else
+        View v = convertView;
+        ViewHolder viewHolder;
+        boolean isChecked = categories.get(groupPosition).getSub_categories().get(childPosition).isChecked();
+        if (convertView != null)
+            viewHolder = (ViewHolder) v.getTag();
+        else {
             v = inflater.inflate(R.layout.category_child_row, parent, false);
-        final Category c = (Category) getChild( groupPosition, childPosition );
-        TextView title = (TextView)v.findViewById(R.id.title);
-        title.setText(c.getTitle());
-        CheckBox cb = (CheckBox)v.findViewById(R.id.check);
-        if(categories.get(groupPosition).getSub_categories().get(childPosition).isChecked()){
-            cb.setChecked(true);
-        } else {
-            cb.setChecked(false);
+            viewHolder = new ViewHolder();
+            viewHolder.title = (TextView)v.findViewById(R.id.title);
+            viewHolder.cb = (CheckBox)v.findViewById(R.id.check);
+            viewHolder.cb.setChecked(isChecked);
+            viewHolder.cb.setOnCheckedChangeListener(new CheckchangeChildListener(groupPosition, childPosition));
+            v.setTag(viewHolder);
         }
-        cb.setOnCheckedChangeListener(new CheckchangeChildListener(groupPosition, childPosition));
+
+        final Category c = (Category) getChild( groupPosition, childPosition );
+        viewHolder.title.setText(c.getTitle());
         return v;
     }
 
@@ -96,30 +103,40 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
         return (long)( groupPosition*1024 );  // To be consistent with getChildId
     }
 
+    private static class ViewGroupHolder {
+        private TextView title;
+        private CheckBox cb;
+        private ImageView image;
+    }
+
     public View getGroupView(final int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
-        View v = null;
-        if( convertView != null )
-            v = convertView;
-        else
+        View v = convertView;
+        ViewGroupHolder holder;
+        //boolean isChecked = categories.get(groupPosition).isChecked();
+        if(convertView != null)
+            holder = (ViewGroupHolder)v.getTag();
+        else {
             v = inflater.inflate(R.layout.category_parent_row, parent, false);
-        final Category category = (Category)getGroup(groupPosition);
-        TextView title = (TextView)v.findViewById(R.id.title);
-        CheckBox cb = (CheckBox)v.findViewById(R.id.check);
-        ImageView image = (ImageView)v.findViewById(R.id.arrow);
-        title.setText(category.getTitle());
-        if(getChildrenCount(groupPosition) == 0){
-            image.setVisibility(View.INVISIBLE);
-            cb.setVisibility(View.VISIBLE);
-            if(categories.get(groupPosition).isChecked()){
-                cb.setChecked(true);
-            } else{
-                cb.setChecked(false);
+            holder = new ViewGroupHolder();
+            holder.title = (TextView)v.findViewById(R.id.title);
+            holder.cb = (CheckBox)v.findViewById(R.id.check);
+            holder.image = (ImageView)v.findViewById(R.id.arrow);
+            if(getChildrenCount(groupPosition)==0){
+                holder.cb.setChecked(categories.get(groupPosition).isChecked());
+                holder.cb.setOnCheckedChangeListener(new CheckchangeGroupListener(groupPosition));
             }
-            cb.setOnCheckedChangeListener(new CheckchangeGroupListener(groupPosition));
+            v.setTag(holder);
+        }
+
+        final Category category = (Category)getGroup(groupPosition);
+        holder.title.setText(category.getTitle());
+        if(getChildrenCount(groupPosition) == 0){
+            holder.cb.setVisibility(View.VISIBLE);
+            holder.image.setVisibility(View.INVISIBLE);
         } else {
-            image.setVisibility(View.VISIBLE);
-            cb.setVisibility(View.INVISIBLE);
-            image.setImageResource(isExpanded ? R.drawable.ic_chevron_down : R.drawable.ic_chevron_right);
+            holder.image.setVisibility(View.VISIBLE);
+            holder.cb.setVisibility(View.INVISIBLE);
+            holder.image.setImageResource(isExpanded ? R.drawable.ic_chevron_down : R.drawable.ic_chevron_right);
         }
         return v;
     }
@@ -153,7 +170,8 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
     }
 
     public void onGroupCollapsed (int groupPosition) {}
-    public void onGroupExpanded(int groupPosition) {}
+    public void onGroupExpanded(int groupPosition) {
+    }
 
     public ArrayList<Category> getSelectedCats(){
         ArrayList<Category> checkedCategories = new ArrayList<>();
@@ -167,5 +185,4 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
         }
         return checkedCategories;
     }
-
 }

@@ -21,6 +21,16 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <permission
+        android:name="kz.itdamu.mallapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="kz.itdamu.mallapp.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -133,7 +143,60 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kz.itdamu.mallapp.activity.MainActivity" />
         </activity>
-        <activity android:name=".activity.AddGoodsActivity"></activity>
+        <activity android:name=".activity.AddGoodsActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.ManageGoodsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kz.itdamu.mallapp.activity.ManageGoodsActivity" />
+        </activity>
+
+        <receiver
+            android:name=".gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.prgguru.example" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".gcm.GCMNotificationIntentService" />
+
+        <activity android:name=".activity.GreetingActivity"
+            android:configChanges="orientation|screenSize"
+            android:noHistory="true"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kz.itdamu.mallapp.activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.CustomPhotosActivity">
+            <intent-filter>
+                <action android:name="mallapp.ACTION_PICK" />
+                <action android:name="mallapp.ACTION_MULTIPLE_PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.GoodsListActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.ShopActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kz.itdamu.mallapp.activity.ShopActivity" />
+        </activity>
+        <activity android:name=".activity.GoodsDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.GoodsListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kz.itdamu.mallapp.activity.GoodsListActivity" />
+        </activity>
     </application>
 
 </manifest>

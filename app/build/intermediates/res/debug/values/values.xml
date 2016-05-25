@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:ns1="http://schemas.android.com/tools">
     <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
@@ -105,6 +105,7 @@
     <color name="background_material_light">@color/material_grey_50</color>
     <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="bg_light_blue">#EBF5FF</color>
     <color name="bg_login">#26ae90</color>
     <color name="bg_main">#428bca</color>
     <color name="bg_register">#2e3237</color>
@@ -136,12 +137,17 @@
     <color name="cardview_shadow_start_color">#37000000</color>
     <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="collapsedColorPrimary">#ffffff</color>
     <item name="colorAccent" type="color">#FF4081</item>
     <item name="colorPrimary" type="color">#673AB7</item>
     <item name="colorPrimaryDark" type="color">#512DA8</item>
     <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/3.0.5/res/values/values.xml -->
     <eat-comment/>
     <color name="colorPrimaryLight">#BBDEFB</color>
+    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="colorPrimarytext">#212121</color>
+    <color name="colorSecondText">#999</color>
     <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/values/base_colors.xml -->
     <eat-comment/>
     <color name="common_action_bar_splitter">#d2d2d2</color>
@@ -222,6 +228,7 @@
     <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="green" type="color">#FF99CC00</item>
+    <color name="grey">#ddd</color>
     <color name="grey_700">#616161</color>
     <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
@@ -670,6 +677,7 @@
     <declare-styleable name="FButton"><attr format="boolean" name="shadowEnabled"/><attr format="color" name="buttonColor"/><attr format="color" name="shadowColor"/><attr format="dimension" name="shadowHeight"/><attr format="dimension" name="cornerRadius"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/><attr format="color" name="fab_colorPressed"/><attr format="color" name="fab_colorNormal"/><attr format="color" name="fab_colorRipple"/><attr format="color" name="fab_colorDisabled"/><attr format="boolean" name="fab_shadow"/><attr format="enum" name="fab_type"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr></declare-styleable>
     <declare-styleable name="ForegroundLinearLayout"><attr name="android:foreground"/><attr name="android:foregroundGravity"/><attr format="boolean" name="foregroundInsidePadding"/></declare-styleable>
+    <declare-styleable name="GenericDraweeView"><attr format="integer" name="fadeDuration"/><attr format="float" name="viewAspectRatio"/><attr format="reference" name="placeholderImage"/><attr name="placeholderImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="retryImage"/><attr name="retryImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="failureImage"/><attr name="failureImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="progressBarImage"/><attr name="progressBarImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="integer" name="progressBarAutoRotateInterval"/><attr name="actualImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="backgroundImage"/><attr format="reference" name="overlayImage"/><attr format="reference" name="pressedStateOverlayImage"/><attr format="boolean" name="roundAsCircle"/><attr format="dimension" name="roundedCornerRadius"/><attr format="boolean" name="roundTopLeft"/><attr format="boolean" name="roundTopRight"/><attr format="boolean" name="roundBottomRight"/><attr format="boolean" name="roundBottomLeft"/><attr format="color" name="roundWithOverlayColor"/><attr format="dimension" name="roundingBorderWidth"/><attr format="color" name="roundingBorderColor"/><attr format="dimension" name="roundingBorderPadding"/></declare-styleable>
     <declare-styleable name="IconicsImageView"><attr format="string" name="iiv_icon"/><attr format="color|reference" name="iiv_color"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
@@ -1108,6 +1116,8 @@
     <string name="error_empty_phone">Главный телефон не может пустым</string>
     <string name="error_empty_title">Название не может пустым</string>
     <string name="goods_add">Добавить</string>
+    <string name="goods_add_photos">Выбрать из галереи</string>
+    <string name="goods_add_photos_ok">Ок</string>
     <string name="goods_description">Описание</string>
     <string name="goods_edit">Редактировать</string>
     <string name="goods_name">Название товара</string>
@@ -1213,13 +1223,16 @@
     <string name="title_activity_edit_shop">EditShopActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_mall_map">На карте</string>
-    <string name="title_activity_manage_goods"/>
+    <string name="title_activity_manage_goods">""</string>
     <string name="title_activity_manage_shop">ManageShopActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_shop">ShopActivity</string>
     <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.3.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
+    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="welcome">GCM Greeting App</string>
     <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
@@ -2370,6 +2383,15 @@
     </style>
     <style name="MaterialDrawerTheme.TranslucentStatus" parent="MaterialDrawerTheme">
     </style>
+    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="MyGoodsToolbarStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+    </style>
     <!-- From: file:/E:/Projects/MallApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
@@ -2941,5 +2963,15 @@
         <item name="android:focusable">true</item>
         <item name="android:contentDescription">@string/mr_media_route_button_content_description</item>
         <item name="externalRouteEnabledDrawable">@drawable/mr_ic_media_route_mono_dark</item>
+    </style>
+    <!-- From: file:/E:/Projects/MallApp/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="btn">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="title_bar">
+        <item name="android:textColor">#d9f3ff</item>
+        <item name="android:textSize">22sp</item>
     </style>
 </resources>

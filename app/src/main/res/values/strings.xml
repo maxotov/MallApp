@@ -14,6 +14,7 @@
     <string name="title_activity_shop">ShopActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="welcome">GCM Greeting App</string>
 
     <string name="hint_email">Ваш e-mail</string>
     <string name="hint_password">Пароль</string>
@@ -39,7 +40,7 @@
     <string name="shop_add_message">Добавить</string>
     <string name="shop_edit_message">Редактировать</string>
     <string name="title_activity_edit_shop">EditShopActivity</string>
-    <string name="title_activity_manage_goods"></string>
+    <string name="title_activity_manage_goods">""</string>
     <string name="manage_shop_detail_display">показать/скрыть информацию</string>
 
     <string name="error_empty_title">Название не может пустым</string>
@@ -64,4 +65,6 @@
     <string name="goods_description">Описание</string>
     <string name="goods_add">Добавить</string>
     <string name="goods_edit">Редактировать</string>
+    <string name="goods_add_photos">Выбрать из галереи</string>
+    <string name="goods_add_photos_ok">Ок</string>
 </resources>
